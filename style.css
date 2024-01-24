@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: yasir;
+    letter-spacing: 1px;
+}
+@font-face {
+    font-family: yasir;
+    src: url(Rejouice-Headline.ttf);
+}
+.main{
+
+
+}
+.contain{
+    max-width: 1222px;
+    margin: 0 auto;
+    /* padding: 0 30px; */
+    text-transform: capitalize;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    width: 20%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+    
+}
+.navbar a{
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar h4{
+   border: 3px solid #2AB9C0;
+   border-radius: 50px;
+   padding: 7px 20px;
+   font-size: 25px;
+   color:#2AB9C0 ;
+   position: relative;
+   overflow: hidden;
+   transition: all ease 0.5s;
+   font-weight: 100;
+}
+.arrow{
+    border: 3px solid #2AB9C0;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-left: 20px;
+    
+}
+.navbar h4::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:#2AB9C0 ;
+    position: absolute;
+    left: 0%;
+    transition: all ease 0.4s;
+    bottom: -100%;
+    
+}
+.navbar h4:hover::after{
+    bottom: 0;
+   border-radius: 0;
+   
+}
+.navbar h4 a{
+    text-decoration: none;
+    color:#2AB9C0 ;
+    position: relative;
+    z-index: 9;
+}
+
+.navbar h4:hover a {
+    color: white;
+}
+.navbar:hover .arrow{
+    border: 3px solid white;
+}
+.hero-section {
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+  
+    
+    
+}
+.left{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    width: 40%;
+    flex-direction: column; 
+    padding-top: 100px;
+    font-weight: 100;
+}
+.right{
+    width: 60%;
+}
+.section-left h1{
+     font-size: 50px;
+     font-weight: 100;
+     
+}
+.section-left h2{
+    font-size: 50px;
+    color: #3F88C7;
+    font-weight: 100;
+    /* line-height: 0.8; */
+
+}
+.frame::after{
+    content: url(Frame\ 1.png);
+    position: absolute;
+    left: 24%;
+    top: 45%;
+}
+
+.section-right img{
+  width: 100%;
+
+}
+#element{
+    font-size: 50px;
+    color: black;
+   
+}
+.review-section img{
+    width: 300px;
+}
+.companies{
+    width: 100%;
+    height: 150px;
+    background-color: #2ab9c057;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.companies h1{
+    text-align: center;
+    color: #3F88C7;
+}
+.company-image{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.hero-section2{
+    height: 100vh;
+}
+.hero-section2 h1{
+    font-size: 40px;
+    padding-top: 30px;
+}
+.we-offer{
+    width: 80%;
+    margin-inline: auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 20px;
+}
+.we-offer button{
+   border: 4px solid  #3F88C7;
+   text-align: center;
+   padding: 5px 30px;
+   color: #3F88C7;
+   font-size: 35px;
+   background-color: white;
+   border-right: 0;
+   text-transform: capitalize;
+}
+.we-offer button:nth-child(4){
+    border-top-right-radius: 20px;
+    border-right: 4px solid #3F88C7;
+}
+.we-offer button:nth-child(1){
+    border-top-left-radius: 20px;
+}
+.plans{
+    width: 100%;
+    background-color: #2ab9c057;
+    display: flex;
+    padding: 100px;
+}
+.left-plan{
+    width: 60%;
+}
+.left-plan li{
+    color: #3F88C7;
+    list-style: none;
+    font-size: 40px;
+    line-height: 1.4;
+    text-transform: capitalize;
+}
+.right-plan {
+   width: 40%;
+  
+}
+.right-plan img {
+    width: 100%;
+   
+   
+ }
