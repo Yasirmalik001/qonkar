@@ -6,17 +6,13 @@
     letter-spacing: 1px;
 }
 @font-face {
-    font-family: yasir;
-    src: url(Rejouice-Headline.ttf);
-}
-.main{
-
-
+    font-family: ;
+    src: url();
 }
 .contain{
     max-width: 1222px;
     margin: 0 auto;
-    /* padding: 0 30px; */
+    padding: 0 30px;
     text-transform: capitalize;
 
 }
@@ -24,9 +20,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
+    
 }
 header img{
-    width: 20%;
+    width: 16%;
 }
 .navbar{
     display: flex;
@@ -45,7 +43,7 @@ header img{
 .navbar h4{
    border: 3px solid #2AB9C0;
    border-radius: 50px;
-   padding: 7px 20px;
+   padding: 7px 8px;
    font-size: 25px;
    color:#2AB9C0 ;
    position: relative;
@@ -57,7 +55,7 @@ header img{
     border: 3px solid #2AB9C0;
     border-radius: 50%;
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 30px;
     
 }
 .navbar h4::after{
@@ -73,7 +71,7 @@ header img{
 }
 .navbar h4:hover::after{
     bottom: 0;
-   border-radius: 0;
+    border-radius: 0;
    
 }
 .navbar h4 a{
@@ -93,9 +91,6 @@ header img{
     display: flex;
     align-items:start;
     justify-content: space-between;
-  
-    
-    
 }
 .left{
     display: flex;
@@ -111,22 +106,21 @@ header img{
     width: 60%;
 }
 .section-left h1{
-     font-size: 50px;
+     font-size: 45px;
      font-weight: 100;
      
 }
 .section-left h2{
-    font-size: 50px;
+    font-size: 45px;
     color: #3F88C7;
     font-weight: 100;
-    /* line-height: 0.8; */
-
+   
 }
 .frame::after{
-    content: url(Frame\ 1.png);
+    content: url(lines.png);
     position: absolute;
-    left: 24%;
-    top: 45%;
+    left: 22%;
+    top: 38%;
 }
 
 .section-right img{
@@ -135,7 +129,7 @@ header img{
 }
 #element{
     font-size: 50px;
-    color: black;
+    color: #2AB9C0;
    
 }
 .review-section img{
@@ -163,17 +157,17 @@ header img{
     height: 100vh;
 }
 .hero-section2 h1{
-    font-size: 40px;
-    padding-top: 30px;
+    font-size: 35px;
+    padding-top: 40px;
 }
 .we-offer{
-    width: 80%;
+    width: 75%;
     margin-inline: auto;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .we-offer button{
    border: 4px solid  #3F88C7;
