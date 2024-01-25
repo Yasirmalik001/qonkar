@@ -3,16 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: yasir;
+    font-weight: 100;
     letter-spacing: 1px;
 }
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: yasir;
+    src: url(/fonts/Rejouice-Headline.ttf);
 }
 .contain{
     max-width: 1222px;
     margin: 0 auto;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     text-transform: capitalize;
 
 }
@@ -24,7 +25,7 @@
     
 }
 header img{
-    width: 16%;
+    width: 15%;
 }
 .navbar{
     display: flex;
@@ -43,7 +44,7 @@ header img{
 .navbar h4{
    border: 3px solid #2AB9C0;
    border-radius: 50px;
-   padding: 7px 8px;
+   padding: 7px 4px;
    font-size: 25px;
    color:#2AB9C0 ;
    position: relative;
@@ -55,7 +56,7 @@ header img{
     border: 3px solid #2AB9C0;
     border-radius: 50%;
     font-size: 30px;
-    margin-left: 30px;
+    margin-left: 20px;
     
 }
 .navbar h4::after{
@@ -92,18 +93,19 @@ header img{
     align-items:start;
     justify-content: space-between;
 }
-.left{
+.hero-section .left{
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 50px;
-    width: 40%;
+    width: 45%;
     flex-direction: column; 
     padding-top: 100px;
-    font-weight: 100;
+    /* background-color: red; */
 }
-.right{
-    width: 60%;
+.hero-section .right{
+    width: 55%;
+    background-color: beige;
 }
 .section-left h1{
      font-size: 45px;
@@ -117,23 +119,23 @@ header img{
    
 }
 .frame::after{
-    content: url(lines.png);
+    content: url(/images/icons/heading\ lines.png);
     position: absolute;
     left: 22%;
     top: 38%;
 }
 
 .section-right img{
-  width: 100%;
+  width: 90%;
 
 }
 #element{
-    font-size: 50px;
-    color: #2AB9C0;
+    font-size: 45px;
+    color: #3F88C7;
    
 }
 .review-section img{
-    width: 300px;
+    width: 350px;
 }
 .companies{
     width: 100%;
@@ -172,7 +174,7 @@ header img{
 .we-offer button{
    border: 4px solid  #3F88C7;
    text-align: center;
-   padding: 5px 30px;
+   padding: 5px 20px;
    color: #3F88C7;
    font-size: 35px;
    background-color: white;
@@ -186,6 +188,7 @@ header img{
 .we-offer button:nth-child(1){
     border-top-left-radius: 20px;
 }
+
 .plans{
     width: 100%;
     background-color: #2ab9c057;
@@ -208,6 +211,4 @@ header img{
 }
 .right-plan img {
     width: 100%;
-   
-   
  }

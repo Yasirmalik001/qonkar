@@ -4,4 +4,6 @@ strings: ['software solution', 'with Qonkar', 'digital ideas'],
       loop:true, 
       backDelay:500,
     });
+    
+  
 
