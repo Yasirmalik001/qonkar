@@ -2,44 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat;
-  font-weight: 100;
-  letter-spacing: 1px;
+  font-family: Roboto;
+  /* letter-spacing: 1px; */
 }
-@font-face {
-  font-family: Montserrat;
-  font-weight: 300;
-  src: url(/fonts/Montserrat-Light.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  font-weight: 500;
-  src: url(/fonts/Montserrat-Medium.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  font-weight: 400;
-  src: url(/fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  font-weight: 600;
-  src: url(/fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  font-weight: 700;
-  src: url(/fonts/Montserrat-ExtraBold.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  font-weight: 800;
-  src: url(/fonts/Montserrat-Black.ttf);
+:root {
+  --border-radius: 10px;
 }
 .contain {
   max-width: 1222px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 10px 0;
   text-transform: capitalize;
 }
 .container {
@@ -60,14 +32,14 @@ header img {
   font-size: 25px;
   text-decoration: none;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .navbar h4 {
   border: 3px solid #2ab9c0;
-  border-radius: 60px;
-  padding: 7px 5px;
-  font-size: 20px;
+  border-radius: 50px;
+  padding: 7px 15px;
+  font-size: 17px;
   color: #2ab9c0;
   position: relative;
   overflow: hidden;
@@ -111,7 +83,7 @@ header img {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 .hero-section .left {
   display: flex;
@@ -120,27 +92,27 @@ header img {
   gap: 50px;
   width: 45%;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 .hero-section .right {
   width: 55%;
 }
 .section-left h1 {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 600;
 }
 .section-left h2 {
-  font-size: 40px;
+  font-size: 48px;
   color: #3f88c7;
-  font-weight: 600;
+  font-weight: 500;
 }
 .frame {
-  font-weight: 600;
+  font-weight: 500;
 }
 .frame::after {
-  content: url(/images/icons/heading\ lines.png);
+  content: url(/qonkar/images/icons/heading\ lines.png);
   position: absolute;
-  left: 24%;
+  left: 22%;
   top: 40%;
 }
 
@@ -150,7 +122,7 @@ header img {
 #element {
   font-size: 50px;
   color: #3f88c7;
-  font-weight: 500;
+  font-weight: 100;
 }
 .review-section img {
   width: 350px;
@@ -201,7 +173,7 @@ header img {
   background-color: white;
   border-right: 0;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 500;
 }
 .we-offer button:nth-child(4) {
   border-top-right-radius: 20px;
@@ -237,7 +209,7 @@ header img {
 .portfolio-heading h1 {
   font-size: 45px;
   padding: 40px 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .scroller {
@@ -248,9 +220,9 @@ header img {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  border-radius: 30px;
   padding-bottom: 20px;
-  border: 1px solid lightblue;
+  border: 1px solid rgba(173, 216, 230, 0.212);
+  border-radius: var(--border-radius);
   text-transform: capitalize;
 }
 .portfolio-wrapper {
@@ -277,18 +249,18 @@ header img {
 .our-image img {
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 .our-portfolio-text {
   font-size: 15px;
   padding: 20px;
 }
 .our-portfolio-text h1 {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 25px;
 }
 .our-portfolio-text h4 {
-  font-weight: 400;
+  font-weight: 200;
   padding: 10px 0;
   font-size: 17px;
 }
@@ -301,19 +273,20 @@ header img {
   background-color: white;
   font-size: 20px;
   color: #2ab9c0;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: capitalize;
-}
-.about-us-heading h1 {
-  font-size: 45px;
-  padding: 40px 0;
-  font-weight: 600;
 }
 .case-arrow {
   border: 3px solid #2ab9c0;
   border-radius: 50%;
   font-size: 25px;
   margin-left: 10px;
+}
+.about-us-heading h1 {
+  font-size: 45px;
+  padding: 40px 0;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 .about-container {
   display: flex;
@@ -326,5 +299,81 @@ header img {
   font-weight: 400;
 }
 .image-about-container img {
-  border-radius: 20px;
+  border-radius: var(--border-radius);
+}
+.about-blogs h1 {
+  font-size: 45px;
+  padding: 40px 0;
+  font-weight: 500;
+}
+.about-blogs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 1px solid #2ab9c037;
+  border-radius: var(--border-radius);
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.368); */
+}
+.blogs-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.blogs-text h3 {
+  padding: 10px;
+  font-weight: 200;
+}
+.blog-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.view-more {
+  border: 2px solid #2ab9c0;
+  border-radius: 50%;
+  font-size: 25px;
+  margin-left: 15px;
+}
+.blog-button button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: white;
+  color: #2ab9c0;
+  border: 3px solid #2ab9c0;
+  font-size: 25px;
+  font-weight: 300;
+}
+.methadologies-heading h1 {
+  font-size: 45px;
+  padding: 40px 0;
+  font-weight: 700;
+}
+.paragraph-methadologies p {
+  font-size: 25px;
+  font-weight: 400;
+}
+.methodologist-svg {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 0;
+}
+.svg-text h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2ab9c0;
+}
+i {
+  font-size: 30px;
 }

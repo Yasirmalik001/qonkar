@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Roboto;
+  font-weight: 300;
+  src: url(/qonkar/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  src: url(/qonkar/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url(/qonkar/fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 600;
+  src: url(/qonkar/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(/qonkar/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 800;
+  src: url(/qonkar/fonts/Roboto-Black.ttf);
+}

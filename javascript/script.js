@@ -1,6 +1,6 @@
 var typed = new Typed("#element", {
   strings: ["software solution", "with Qonkar", "digital ideas"],
-  typeSpeed: 60,
+  typeSpeed: 90,
   loop: true,
   backDelay: 500,
 });
