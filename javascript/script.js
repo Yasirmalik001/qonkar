@@ -1,4 +1,4 @@
-var typed = new Typed("#element", {
+var typed = new Typed("#aimation-text", {
   strings: ["software solution", "with Qonkar", "digital ideas"],
   typeSpeed: 90,
   loop: true,

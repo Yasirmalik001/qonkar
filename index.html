@@ -11,73 +11,90 @@
     <meta property="og:description" content="" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Qonkar Technologies" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <script src="/javascript/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <div class="main">
       <div class="contain"></div>
-      <header class="contain container">
-        <img src="images/logo/Qonkar Logo Capital.png" alt="Qonkar logo" />
-        <div class="navbar">
-          <a href="#">home</a>
-          <a href="#">services<i class="ri-arrow-down-s-line"></i></a>
-          <a href="#">portfolio</a>
-          <a href="#">blogs</a>
-          <a href="#">about us</a>
-          <h4>
-            <a href="#">get started<i class="arrow ri-arrow-right-up-line"></i></a>
-          </h4>
+      <header>
+        <div class="contain header-container">
+          <div class="company-logo">
+            <img src="images/logo/Qonkar Logo Capital.png" alt="QonkarTechnologies logo" />
+          </div>
+          <div class="navbar">
+            <ul class="navlinks">
+              <a href="#">home</a>
+              <a href="#">services</a>
+              <a href="#">portfolio</a>
+              <a href="#">blogs</a>
+              <a href="#">about us</a>
+              <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Learn More</span>
+              </button>
+            </ul>
         </div>
+       </div>
       </header>
       <!-- end header -->
       <section>
         <div class="contain hero-section">
-          <div class="left">
+          <div class="left-hero-section">
             <div class="section-left">
               <h1>transforming ideas into</h1>
-              <h2>digital <span class="frame">success</span></h2>
+              <h2>digital <span class="success">success</span></h2>
             </div>
-            <div class="animated-text">
-              <span id="element"></span>
+            <div class="Animated-text">
+              <span id="aimation-text"></span>
             </div>
             <div class="review-section">
               <img src="images/logo/Reviews.svg" alt="" />
             </div>
           </div>
-          <div class="right">
+          <div class="right-hero-section">
             <div class="section-right">
               <img src="images/hero image/Hero Image_croped.svg" alt="" />
             </div>
           </div>
         </div>
-        <div class="companies">
+        </section>
+        <!-- section end -->
+        <section class="work-with">
+        <div class="companies-we-work">
           <h1>companies we work with</h1>
-          <div class="company-image">
+          </div>
+          <div class="company-names">
             <img src="images/icons/carsound.png" alt="" />
             <img src="images/icons/dermi.png" alt="" />
             <img src="images/icons/fuel.png" alt="" />
             <img src="images/icons/gextron.png" alt="" />
             <img src="images/icons/iskra.png" alt="" />
           </div>
-        </div>
       </section>
-      <!-- 1st section -->
+      <!-- 2nd section -->
       <section>
-        <div class="hero-section2">
-          <h1 class="contain">we offers</h1>
-          <div class="we-offer">
-            <button>digital marketing</button>
-            <button>design</button>
-            <button>development</button>
-            <button>production</button>
+        <div class="contain our-services">
+          <h1>we offers</h1>
           </div>
+          <div class="contain we-offer-services">
+            <div class="we-offers">
+              <button>digital marketing</button>
+              <button>design</button>
+              <button>development</button>
+              <button>production</button>
+            </div>
+          </div>
+
+      </section>
           <div class="plans">
             <div class="left-plan">
               <ul>
@@ -89,7 +106,7 @@
               </ul>
             </div>
             <div class="right-plan">
-              <img src="images/hero image/Illustration.png" alt="" />
+              <img src="/images/hero image/Illustration.png" alt="" />
             </div>
           </div>
         </div>
@@ -104,7 +121,7 @@
             <div class="swiper-slide" data-slide-index="1">
               <div class="our-agenda portfolio-container">
                 <div class="our-image">
-                  <img src="/qonkar/images/SVG/portfolio.1.svg" alt="" />
+                  <img src="/images/SVG/portfolio.1.svg" alt="" />
                 </div>
                 <div class="contain our-portfolio-text">
                   <h1>doctor appointment app</h1>
@@ -118,7 +135,7 @@
             <div class="swiper-slide" data-slide-index="1">
               <div class="our-agenda portfolio-container">
                 <div class="our-image">
-                  <img src="/qonkar/images/SVG/portfolio.1.svg" alt="" />
+                  <img src="/images/SVG/portfolio.1.svg" alt="" />
                 </div>
                 <div class="contain our-portfolio-text">
                   <h1>doctor appointment app</h1>
@@ -132,7 +149,7 @@
             <div class="swiper-slide" data-slide-index="1">
               <div class="our-agenda portfolio-container">
                 <div class="our-image">
-                  <img src="/qonkar/images/SVG/portfolio.1.svg" alt="" />
+                  <img src="/images/SVG/portfolio.1.svg" alt="" />
                 </div>
                 <div class="contain our-portfolio-text">
                   <h1>doctor appointment app</h1>
@@ -146,7 +163,7 @@
             <div class="swiper-slide" data-slide-index="1">
               <div class="our-agenda portfolio-container">
                 <div class="our-image">
-                  <img src="/qonkar/images/SVG/portfolio.1.svg" alt="" />
+                  <img src="/images/SVG/portfolio.1.svg" alt="" />
                 </div>
                 <div class="contain our-portfolio-text">
                   <h1>doctor appointment app</h1>
@@ -160,7 +177,7 @@
             <div class="swiper-slide" data-slide-index="1">
               <div class="our-agenda portfolio-container">
                 <div class="our-image">
-                  <img src="/qonkar/images/SVG/portfolio.1.svg" alt="client-portfolio-image" />
+                  <img src="/images/SVG/portfolio.1.svg" alt="client-portfolio-image" />
                 </div>
                 <div class="contain our-portfolio-text">
                   <h1>doctor appointment app</h1>
@@ -184,7 +201,7 @@
             <p>Qonkar is your trusted partner. We help business each their full potential by providing expert solutions that drive growth and success. Let us help you take your business to the next level. Qonkar is your trusted partner. We help business each their full potential by providing expert solution that drive growth and success. Let us help you take your business to the next level.</p>
           </div>
           <div class="image-about-container">
-            <img src="/qonkar/images/hero image/qonkar people.png" alt="Qonkar about-us image" />
+            <img src="/images/hero image/qonkar people.png" alt="Qonkar about-us image" />
           </div>
         </div>
       </section>
@@ -196,7 +213,7 @@
         <div class="contain about-blogs-container">
           <div class="blogs-container">
             <div class="blogs-image">
-              <img src="/qonkar/images/SVG/methadology 1.png" alt="" />
+              <img src="/images/SVG/methadology 1.png" alt="" />
             </div>
             <div class="blogs-text">
               <h3>QonkarTechnologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</h3>
@@ -204,7 +221,7 @@
           </div>
           <div class="blogs-container">
             <div class="blogs-image">
-              <img src="/qonkar/images/SVG/methadology 2.png" alt="" />
+              <img src="/images/SVG/methadology 2.png" alt="" />
             </div>
             <div class="blogs-text">
               <h3>QonkarTechnologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</h3>
@@ -212,7 +229,7 @@
           </div>
           <div class="blogs-container">
             <div class="blogs-image">
-              <img src="/qonkar/images/SVG/methadology 3.png" alt="" />
+              <img src="/images/SVG/methadology 3.png" alt="" />
             </div>
             <div class="blogs-text">
               <h3>QonkarTechnologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</h3>
@@ -234,7 +251,7 @@
         <div class="contain methodologist-svg">
           <div class="svg-container">
             <div class="svg-icon">
-              <img src="/qonkar/images/SVG/people.svg" alt="" />
+              <img src="/images/SVG/people.svg" alt="" />
             </div>
             <div class="svg-text">
               <h5>discovery & consultantancy<i class="ri-arrow-down-s-line"></i></h5>
@@ -242,7 +259,7 @@
           </div>
           <div class="svg-container">
             <div class="svg-icon">
-              <img src="/qonkar/images/SVG/card.svg" alt="" />
+              <img src="/images/SVG/card.svg" alt="" />
             </div>
             <div class="svg-text">
               <h5>in-depth analysis<i class="ri-arrow-down-s-line"></i></h5>
@@ -250,7 +267,7 @@
           </div>
           <div class="svg-container">
             <div class="svg-icon">
-              <img src="/qonkar/images/SVG/achievement.svg" alt="" />
+              <img src="/images/SVG/achievement.svg" alt="" />
             </div>
             <div class="svg-text">
               <h5>customize strategy<i class="ri-arrow-down-s-line"></i></h5>
@@ -258,7 +275,7 @@
           </div>
           <div class="svg-container">
             <div class="svg-icon">
-              <img src="/qonkar/images/SVG/certified.svg" alt="" />
+              <img src="/images/SVG/certified.svg" alt="" />
             </div>
             <div class="svg-text">
               <h5>implementing excellence<i class="ri-arrow-down-s-line"></i></h5>
@@ -266,7 +283,7 @@
           </div>
           <div class="svg-container">
             <div class="svg-icon">
-              <img src="/qonkar/images/SVG/search.svg" alt="" />
+              <img src="/images/SVG/search.svg" alt="" />
             </div>
             <div class="svg-text">
               <h5>monetoring & optimizing<i class="ri-arrow-down-s-line"></i></h5>
@@ -274,7 +291,7 @@
           </div>
           <div class="svg-container">
             <div class="svg-icon">
-              <img src="/qonkar/images/SVG/clipborad.svg" alt="" />
+              <img src="/images/SVG/clipborad.svg" alt="" />
             </div>
             <div class="svg-text">
               <h5>transparent reporting<i class="ri-arrow-down-s-line"></i></h5>
@@ -282,7 +299,7 @@
           </div>
           <div class="svg-container">
             <div class="svg-icon">
-              <img src="/qonkar/images/SVG/static.svg" alt="" />
+              <img src="/images/SVG/static.svg" alt="" />
             </div>
             <div class="svg-text">
               <h5>our plans<i class="ri-arrow-down-s-line"></i></h5>
