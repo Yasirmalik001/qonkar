@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Roboto;
   letter-spacing: 1px;
+  text-transform: capitalize;
 }
 :root {
   --border-radius: 10px;
@@ -15,17 +16,17 @@
   --color: #3f88c7;
   --background-color: #2ab9c057;
 }
+
 .contain {
   max-width: 1222px;
   margin: 0 auto;
-  /* padding: 10px 0; */
-  text-transform: capitalize;
+  padding: 10px 20px;
 }
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 .company-logo img {
   width: 180px;
@@ -180,13 +181,13 @@ button:hover .button-text {
   justify-content: center;
   flex-direction: column;
   gap: 30px;
-  width: 100%;
+  /* width: 100%; */
   height: 150px;
   background-color: var(--background-color);
 }
 .companies-we-work h1 {
   color: var(--color);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--fs-head);
 }
 .company-names {
@@ -207,11 +208,9 @@ button:hover .button-text {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 3px solid black;
 }
 .we-offers button {
   font-size: var(--fs-head);
-  /* border-right: 3px solid black; */
 }
 .plans {
   width: 100%;
@@ -390,23 +389,37 @@ button:hover .button-text {
 }
 .methodologist-svg {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
+
 .svg-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  padding: 30px 0;
 }
 .svg-text h5 {
   font-size: 17px;
   font-weight: 500;
   color: #2ab9c0;
+  text-align: center;
 }
 .ri-arrow-down-s-line {
-  font-size: 35px;
+  font-size: 30px;
+}
+.strategy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-column: 2 / span 2;
+  gap: 20px;
+}
+.startegy-paragraph p {
+  font-size: 20px;
+  font-weight: 400;
 }
 .industry-heading h1 {
   font-size: 45px;
@@ -415,8 +428,9 @@ button:hover .button-text {
 }
 .industrial-expertise {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  padding: 0 15px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 15px;
+  /* padding: 0 15px; */
 }
 .industry-svg {
   display: flex;
@@ -439,62 +453,33 @@ button:hover .button-text {
 }
 
 .svg-title h5 {
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 20px;
   text-align: center;
+  color: #19d4de;
 }
 .Testimonial-heading h1 {
   font-size: 45px;
   padding: 40px 0;
   font-weight: 700;
 }
-.Testimonial-container {
+/* .Testimonial-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 15px;
   padding: 10px;
 }
 .Testimonial-content {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 40px;
   border: 3px solid #2ab9c0;
   border-radius: var(--border-radius);
   padding: 15px;
-}
-.client-image {
-  width: 90px;
-  height: 90px;
-}
-.client-image img {
-  width: 100%;
-  border-radius: 50%;
-  object-fit: contain;
-}
-.client-heading-reviews {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.client-heading {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-}
-.client-heading p {
-  text-align: start;
-  font-weight: 100;
-  font-size: 13px;
-}
-.client-reviews {
-  display: flex;
-  gap: 20px;
-}
+} */
+
 .contact-us-heading h1 {
   font-size: 45px;
   padding: 40px 0;
@@ -503,5 +488,65 @@ button:hover .button-text {
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 15px;
+  grid-gap: 30px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 10px;
+}
+input::placeholder {
+  color: #0088ff;
+  font-size: 20px;
+}
+input:focus {
+  outline: none;
+}
+.input input {
+  padding: 15px 50px;
+  border-radius: 30px;
+  border: 2px solid #19d4de;
+  width: 100%;
+}
+.email {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email input {
+  width: 100%;
+  padding: 15px 50px;
+  border-radius: 30px;
+  border: 2px solid #19d4de;
+  margin-top: 20px;
+}
+.textarea {
+  width: 80%;
+  border: 3px solid #19d4de;
+  margin-top: 20px;
+  border: none;
+}
+.textarea input {
+  width: 100%;
+  height: 150px;
+  border: 2px solid #19d4de;
+  border-radius: 20px;
+}
+.submit {
+  padding: 10px 40px;
+  border: 2px solid #19d4de;
+  border-radius: 30px;
+  margin-top: 20px;
+  background-color: #19d4de;
+  color: white;
+  font-size: 20px;
 }
