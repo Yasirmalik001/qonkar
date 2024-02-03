@@ -1,8 +1,14 @@
-var typed = new Typed("#aimation-text", {
+var loader = document.getElementById("loader");
+setTimeout(function () {
+  loader.style.top = "-100%";
+  console.log("first");
+}, 3500);
+
+let typed = new Typed("#aimation-text", {
   strings: ["software solution", "with Qonkar", "digital ideas"],
   typeSpeed: 90,
   loop: true,
-  backDelay: 500,
+  backDelay: 100,
 });
 
 let portfolioSwiper = new Swiper(".portfolio-container", {
@@ -12,6 +18,8 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
   slidesPerView: 4,
   loop: true,
   speed: 5000,
+  parallax: true,
+  autoplayDisableOnInteraction: false,
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
@@ -19,9 +27,10 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
 });
 document.querySelector(".portfolio-container").addEventListener("click", function () {
   portfolioSwiper.stopAutoplay();
-  console.log("portfolioSwiper");
 });
 
 document.querySelector(".portfolio-container").addEventListener("mouseleave", function () {
   portfolioSwiper.startAutoplay();
 });
+
+// ----------//
