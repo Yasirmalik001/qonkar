@@ -15,27 +15,28 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="#" />
-    <script src="javascript/script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="javascript/script.js" defer></script>
   </head>
   <body>
     <div id="loader">
       <h1>• Hello</h1>
-      <h1>• नमस्ते</h1>
-      <h1>• Nǐ hǎo</h1>
+      <h1>•Salām (سلام)</h1>
+      <h1>• Cześć</h1>
       <h1>• Hola</h1>
       <h1>• Bonjour</h1>
       <h1>• ola`</h1>
       <h1>• Ciao</h1>
     </div>
+    <div class="contain"></div>
     <div class="main">
-      <div class="contain"></div>
       <header>
         <div class="contain header-container">
-          <div class="company-logo">
+          <!-- <i class="ri-menu-line" id="hamburger"></i> -->
+          <div class="company-logos">
             <img src="images/logo/Qonkar Logo Capital.png" alt="Qonkar Technologies logo" />
           </div>
           <div class="navbar">
@@ -43,7 +44,7 @@
               <a href="#">home</a>
               <a href="#">services</a>
               <a href="#">portfolio</a>
-              <a href="#">blogs</a>
+              <a href="#">career</a>
               <a href="#">about us</a>
               <button class="learn-more">
                 <span class="circle" aria-hidden="true">
@@ -61,11 +62,9 @@
           <div class="left-hero-section">
             <div class="section-left">
               <h1>transforming ideas into</h1>
-              <h2>digital <span class="success">success</span></h2>
+              <h2>digital success</h2>
             </div>
-            <div class="Animated-text">
-              <span id="aimation-text"></span>
-            </div>
+
             <div class="review-section">
               <img src="images/logo/Reviews.svg" alt="" />
             </div>
@@ -78,16 +77,29 @@
         </div>
       </section>
       <!-- section end -->
-      <section class="work-with">
-        <div class="companies-we-work">
-          <h1>companies we work with</h1>
+      <section>
+        <div class="contain company-heading">
+          <h1>companies work</h1>
         </div>
-        <div class="company-names">
-          <img src="images/icons/carsound.png" alt="" />
-          <img src="images/icons/dermi.png" alt="" />
-          <img src="images/icons/fuel.png" alt="" />
-          <img src="images/icons/gextron.png" alt="" />
-          <img src="images/icons/iskra.png" alt="" />
+        <div class="company-slides">
+          <div class="company-logo">
+            <img src="images/icons/image1.svg" alt="" />
+            <img src="images/icons/image7.svg" alt="" />
+            <img src="images/icons/image9.svg" alt="" />
+            <img src="images/icons/image5.svg" alt="" />
+            <img src="images/icons/image3.svg" alt="" />
+            <img src="images/icons/image8.svg" alt="" />
+            <img src="images/icons/image7.svg" alt="" />
+          </div>
+          <div class="company-logo">
+            <img src="images/icons/image1.svg" alt="" />
+            <img src="images/icons/image9.svg" alt="" />
+            <img src="images/icons/image7.svg" alt="" />
+            <img src="images/icons/image5.svg" alt="" />
+            <img src="images/icons/image3.svg" alt="" />
+            <img src="images/icons/image7.svg" alt="" />
+            <img src="images/icons/image8.svg" alt="" />
+          </div>
         </div>
       </section>
       <!-- 2nd section -->
@@ -127,12 +139,12 @@
                 <div class="our-image">
                   <img src="images/hero image/calender.webp" alt="" />
                 </div>
-                <div class="contain our-portfolio-text">
-                  <h1>doctor appointment app</h1>
-                  <h4>our qonkar design Qonkar Design the Doctor appointment app and develop for easy of doctor and their patient experience</h4>
-                </div>
-                <div class="contain case-button">
-                  <button>read case study<i class="case-arrow ri-arrow-right-line"></i></button>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-index="1">
+              <div class="our-agenda portfolio-container">
+                <div class="our-image">
+                  <img src="images/hero image/calender.webp" alt="" />
                 </div>
               </div>
             </div>
@@ -141,13 +153,6 @@
                 <div class="our-image">
                   <img src="images/hero image/calender.webp" alt="" />
                 </div>
-                <div class="contain our-portfolio-text">
-                  <h1>doctor appointment app</h1>
-                  <h4>our qonkar design Qonkar Design the Doctor appointment app and develop for easy of doctor and their patient experience</h4>
-                </div>
-                <div class="contain case-button">
-                  <button>read case study<i class="case-arrow ri-arrow-right-line"></i></button>
-                </div>
               </div>
             </div>
             <div class="swiper-slide" data-slide-index="1">
@@ -155,40 +160,12 @@
                 <div class="our-image">
                   <img src="images/hero image/calender.webp" alt="" />
                 </div>
-                <div class="contain our-portfolio-text">
-                  <h1>doctor appointment app</h1>
-                  <h4>our qonkar design Qonkar Design the Doctor appointment app and develop for easy of doctor and their patient experience</h4>
-                </div>
-                <div class="contain case-button">
-                  <button>read case study<i class="case-arrow ri-arrow-right-line"></i></button>
-                </div>
               </div>
             </div>
             <div class="swiper-slide" data-slide-index="1">
               <div class="our-agenda portfolio-container">
                 <div class="our-image">
                   <img src="images/hero image/calender.webp" alt="" />
-                </div>
-                <div class="contain our-portfolio-text">
-                  <h1>doctor appointment app</h1>
-                  <h4>our qonkar design Qonkar Design the Doctor appointment app and develop for easy of doctor and their patient experience</h4>
-                </div>
-                <div class="contain case-button">
-                  <button>read case study<i class="case-arrow ri-arrow-right-line"></i></button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" data-slide-index="1">
-              <div class="our-agenda portfolio-container">
-                <div class="our-image">
-                  <img src="images/hero image/calender.webp" alt="" />
-                </div>
-                <div class="contain our-portfolio-text">
-                  <h1>doctor appointment app</h1>
-                  <h4>our qonkar design Qonkar Design the Doctor appointment app and develop for easy of doctor and their patient experience</h4>
-                </div>
-                <div class="contain case-button">
-                  <button>read case study<i class="case-arrow ri-arrow-right-line"></i></button>
                 </div>
               </div>
             </div>
@@ -240,8 +217,13 @@
             </div>
           </div>
         </div>
-        <div class="blog-button">
-          <button>view more<i class="view-more ri-arrow-right-up-line"></i></button>
+        <div class="view-more">
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button>
         </div>
       </section>
       <!-- section end -->
@@ -583,14 +565,63 @@
                   </div>
                 </div>
                 <div class="form-fill">
-                  <textarea name="" id="textarea" cols="20" rows="6" placeholder="Message"></textarea>
-                  <input type="submit" value="submit" id="submit" />
+                  <textarea name="" id="textarea" placeholder="Message"></textarea>
                 </div>
+                <input type="submit" value="submit" id="submit" />
               </form>
             </div>
           </div>
         </div>
       </section>
+      <!-- section end -->
+      <footer>
+        <div class="contain footer-text">
+          <div class="footer-left">
+            <img src="images/logo/Qonkar Logo Capital.png" alt="" />
+          </div>
+          <div class="footer-right">
+            <div class="policy-container">
+              <div class="terms-services">
+                <h2>privacy</h2>
+                <h3>data</h3>
+                <h3>security</h3>
+                <h3>info</h3>
+              </div>
+              <div class="terms-services">
+                <h2>careers</h2>
+                <h3>designs</h3>
+                <h3>Development</h3>
+                <h3>research</h3>
+                <h3>project manager</h3>
+              </div>
+              <div class="terms-services">
+                <h2>terms of services</h2>
+                <h3>accept terms</h3>
+                <h3>payment verified</h3>
+                <h3>keep secret</h3>
+              </div>
+            </div>
+            <div class="contain follow-us">
+              <div class="follow-heading">
+                <h2>follow Us</h2>
+              </div>
+              <ul class="Social-links">
+                <li><i class="ri-linkedin-fill"></i></li>
+                <li><i class="ri-instagram-line"></i></li>
+                <li><i class="ri-twitter-x-line"></i></li>
+                <li><i class="ri-github-fill"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-heading"></div>
+        <div class="footer-contacts">
+          <h5><i class="ri-copyright-line"></i>all right reserved by Qonkar</h5>
+          <h5><i class="ri-global-line"></i> NawabShah,PK</h5>
+          <h5>Linkedin</h5>
+          <h5>Instagram</h5>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

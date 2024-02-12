@@ -1,14 +1,21 @@
 var loader = document.getElementById("loader");
 setTimeout(function () {
   loader.style.top = "-100%";
-  console.log("first");
-}, 3500);
+}, 2000);
 
-let typed = new Typed("#aimation-text", {
-  strings: ["software solution", "with Qonkar", "digital ideas"],
-  typeSpeed: 90,
-  loop: true,
-  backDelay: 100,
+gsap.from(".section-left h1", {
+  y: 100,
+  opacity: 0,
+  delay: 0.5,
+  duration: 1.9,
+  stagger: 0.3,
+});
+gsap.from(".section-left h2", {
+  y: 100,
+  opacity: 0,
+  delay: 0.5,
+  duration: 0.9,
+  stagger: 0.5,
 });
 
 let portfolioSwiper = new Swiper(".portfolio-container", {
