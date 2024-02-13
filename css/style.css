@@ -21,9 +21,8 @@
   --active-color: hsl(200, 70%, 56%);
   --error-color: hsl(353, 64%, 53%);
   --border-color: hsl(200, 4%, 64%);
-  --text-color: hsl(200, 4%, 24%);
+  --Loader-color: hsl(200, 4%, 24%);
   --body-color: hsl(0, 0%, 100%);
-  --body-font: "Montserrat", sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
@@ -32,7 +31,7 @@
 #loader {
   width: 100%;
   height: 100%;
-  background-color: var(--text-color);
+  background-color: var(--Loader-color);
   position: fixed;
   top: 0;
   z-index: 9;
@@ -47,9 +46,8 @@
   position: absolute;
   opacity: 0;
   color: white;
-  -webkit-background-clip: text;
   animation-name: load;
-  animation-duration: 0.2s;
+  animation-duration: 0.1s;
   animation-delay: 0.2s;
   animation-timing-function: linear;
   font-weight: 400;
@@ -100,7 +98,7 @@
   justify-content: space-between;
 }
 .company-logos img {
-  width: 170px;
+  width: 180px;
 }
 .navbar {
   display: flex;
@@ -230,24 +228,32 @@ button:hover .button-text {
   width: 55%;
 }
 .section-left h1 {
-  font-size: 75px;
+  font-size: 4rem;
   text-transform: uppercase;
-  line-height: 4vw;
-  letter-spacing: -2px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 3.5rem;
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
 }
 .section-left h2 {
-  font-size: var(--fs-head);
+  font-size: 3rem;
   text-transform: uppercase;
-  line-height: 6vw;
-  letter-spacing: -2px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 4rem;
   color: var(--color);
 }
 
 .section-right img {
   width: 100%;
 }
+.review-section {
+  width: 300px;
+}
 .review-section img {
-  width: 400px;
+  width: 100%;
 }
 /*=============== HERO SECTION FIELD ===============*/
 .company-heading h1 {
@@ -257,14 +263,12 @@ button:hover .button-text {
   text-transform: capitalize;
 }
 .company-slides {
-  background-color: #2ab9c069;
+  /* background-color: #2ab9c069; */
   padding: 20px 0;
   white-space: nowrap;
   overflow: hidden;
 }
-.company-logo::-webkit-scrollbar {
-  display: none;
-}
+
 .company-slides:hover .company-logo {
   animation-play-state: paused;
 }
@@ -293,37 +297,30 @@ button:hover .button-text {
   padding: 40px 0;
   text-transform: uppercase;
 }
-.we-offers {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.we-offers button {
-  font-size: var(--fs-head);
-}
+
 .plans {
   width: 100%;
-  background-color: #2ab9c057;
+  /* background-color: #2ab9c057; */
   display: flex;
-  align-items: start;
-  justify-content: center;
-  padding: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.left-plan li {
-  color: #3f88c7;
-  list-style: none;
-  font-size: 35px;
+.left-plan > p {
+  /* list-style: none; */
+  font-size: 3rem;
   line-height: 1.5;
   text-transform: capitalize;
   font-weight: 500;
+  background: linear-gradient(to right, #2ab9c0 50%, black 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.right-plan {
-  width: 40%;
-}
-.right-plan img {
-  width: 100%;
-}
+
 /*=============== PLAN FIELD ===============*/
 
 .portfolio-heading h1 {
@@ -349,14 +346,6 @@ button:hover .button-text {
 .portfolio-wrapper {
   transition-timing-function: linear !important;
 }
-/* .swiper-slide[data-slide-index="1"] {
-}
-
-.swiper-slide[data-slide-index="2"] {
-}
-
-.swiper-slide[data-slide-index="3"] {
-} */
 
 .our-agenda {
   display: flex;
@@ -385,9 +374,9 @@ button:hover .button-text {
   justify-content: center;
 }
 .pargraph-container p {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
-  width: 70%;
+  width: 80%;
 }
 .image-about-container {
   border-radius: var(--border-radius);
