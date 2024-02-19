@@ -28,7 +28,7 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
   grabCursor: true,
   slidesPerView: "auto",
   spaceBetween: 20,
-  slidesPerView: 3,
+  slidesPerView: 4,
   loop: true,
   speed: 5000,
   parallax: true,
@@ -36,14 +36,9 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+    reverseDirection: true,
   },
-});
-document.querySelector(".portfolio-container").addEventListener("click", function () {
-  portfolioSwiper.stopAutoplay();
-});
-
-document.querySelector(".portfolio-container").addEventListener("mouseleave", function () {
-  portfolioSwiper.startAutoplay();
 });
 
 // ----------//
