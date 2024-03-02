@@ -82,7 +82,7 @@
 
 .contain {
   max-width: 1222px;
-  margin-inline: auto;
+  margin: 0 auto;
   /* overflow: hidden; */
   padding-inline: 10px 30px;
 }
@@ -261,7 +261,6 @@ button:hover .button-text {
   text-transform: capitalize;
 }
 .company-slides {
-  /* background-color: #2ab9c069; */
   padding: 20px 0;
   white-space: nowrap;
   overflow: hidden;
@@ -271,16 +270,15 @@ button:hover .button-text {
   animation-play-state: paused;
 }
 .company-logo {
-  /* display: flex; */
   display: inline-block;
   animation: slide 20s infinite linear;
 }
 @keyframes slide {
   to {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
   from {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 }
 .company-logo img {
