@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        height: 100vh;
+        scroll-snap-align: end;
+      }
+      .parent {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .child1 {
+        scroll-snap-align: center;
+        min-height: 100vh;
+        background-color: red;
+      }
+      .child2 {
+        scroll-snap-align: center;
+        min-height: 100vh;
+        background-color: green;
+      }
+      .child3 {
+        scroll-snap-align: center;
+        min-height: 100vh;
+        background-color: blue;
+      }
+      .child4 {
+        scroll-snap-align: center;
+        min-height: 100vh;
+        background-color: blueviolet;
+      }
+      .child5 {
+        scroll-snap-align: center;
+        min-height: 100vh;
+        background-color: orangered;
+      }
+      .child6 {
+        scroll-snap-align: center;
+        min-height: 100vh;
+        background-color: coral;
+      }
+      .button {
+        display: flex;
+        padding: 1.1rem 2.5rem 1.1rem 3.5rem;
+        border-radius: 99rem;
+        align-self: baseline;
+        background-color: orange;
+        transition: all 0.5s ease;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+      }
+      a {
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease;
+      }
+      .innerbuttoncirclearrow {
+        background: url(images/SVG/Social_arrow.svg);
+
+        filter: brightness(1) invert(0);
+      }
+      .innerbuttoncircle {
+        display: flex;
+        position: relative;
+        border-radius: 99rem;
+        width: 0rem;
+        height: 0rem;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease;
+      }
+      .innerbuttoncirclewrapper {
+        display: flex;
+        position: relative;
+        height: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .innerbuttoncirclearrow {
+        display: flex;
+        position: relative;
+        width: 0rem;
+        height: 0rem;
+        justify-content: center;
+        align-items: center;
+        background: url(images/SVG/Social_arrow.svg);
+        background-size: contain;
+        transition: all 0.5s ease;
+        background-repeat: no-repeat;
+        transform: rotate(-180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <section>
+        <div class="child1">Lorem, ipsum.</div>
+      </section>
+      <section>
+        <div class="child2">Lorem, ipsum.</div>
+      </section>
+      <section>
+        <div class="child3">Lorem, ipsum.</div>
+      </section>
+      <section>
+        <div class="child4">Lorem, ipsum.</div>
+      </section>
+      <section>
+        <div class="child5">Lorem, ipsum.</div>
+      </section>
+      <section>
+        <div class="child6">Lorem, ipsum.</div>
+      </section>
+    </div>
+  </body>
+</html>

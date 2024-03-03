@@ -1,28 +1,7 @@
-var loader = document.getElementById("loader");
+var loader = document.getElementById("loading__animation");
 setTimeout(function () {
   loader.style.top = "-100%";
-}, 2000);
-
-const myText2 = new SplitType(".section-left h2");
-
-var tl = gsap.to(".left-plan > p", {
-  backgroundPositionX: "0%",
-  stagger: 0.3,
-  scrollTrigger: {
-    trigger: ".left-plan",
-    scrub: 1,
-    delay: 0.05,
-    duration: 0.1,
-    start: "top center",
-    end: "bottom center",
-  },
-});
-gsap.to(".char", {
-  y: 0,
-  stagger: 0.1,
-  delay: 1.2,
-  duration: 0.2,
-});
+}, 2500);
 
 let portfolioSwiper = new Swiper(".portfolio-container", {
   grabCursor: true,
@@ -30,7 +9,7 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
   spaceBetween: 20,
   slidesPerView: 4,
   loop: true,
-  speed: 5000,
+  speed: 3000,
   parallax: true,
   autoplayDisableOnInteraction: false,
   autoplay: {
@@ -38,6 +17,23 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
     reverseDirection: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
   },
 });
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,16 +15,14 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="javascript/script.js" defer></script>
   </head>
   <body>
-    <div id="loader">
+    <div id="loading__animation">
       <h1>• Hello</h1>
       <h1>•Salām (سلام)</h1>
       <h1>• Cześć</h1>
@@ -33,553 +31,401 @@
       <h1>• ola`</h1>
       <h1>• Ciao</h1>
     </div>
-    <div class="contain"></div>
     <div class="main">
-      <header>
-        <div class="contain header-container">
-          <div class="company-logos">
-            <img src="images/logo/Qonkar Logo Capital.png" alt="Qonkar Technologies logo" />
+      <section>
+        <header>
+          <div class="child1">
+            <div class="container header-container">
+              <div class="company-logos">
+                <img src="images/logo/Qonkar Logo Capital.png" alt="Qonkar Technologies logo" />
+              </div>
+              <div class="navbar">
+                <ul class="navlinks">
+                  <a href="#">home</a>
+                  <a href="#">services</a>
+                  <a href="#">portfolio</a>
+                  <a href="#">career</a>
+                  <a href="#">about us</a>
+                  <button>
+                    Get to work
+                    <div class="icons">
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                          <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                        </svg>
+                      </span>
+                    </div>
+                  </button>
+                </ul>
+              </div>
+              <div class="hamburger">
+                <input id="menu__toggle" type="checkbox" />
+                <label for="menu__toggle" class="menu__btn">
+                  <span></span>
+                </label>
+                <div class="menu-box">
+                  <li><a class="menu__item" href="#">home</a></li>
+                  <li><a class="menu__item" href="#">services</a></li>
+                  <li><a class="menu__item" href="#">portfolio</a></li>
+                  <li><a class="menu__item" href="#">career</a></li>
+                  <li><a class="menu__item" href="#">about us</a></li>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="navbar">
-            <ul class="navlinks">
-              <a href="#">home</a>
-              <a href="#">services</a>
-              <a href="#">portfolio</a>
-              <a href="#">career</a>
-              <a href="#">about us</a>
-              <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                  <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Learn More</span>
-              </button>
-            </ul>
-          </div>
-          <a href="#" class="hamburger">
-            <i class="ri-menu-line"></i>
-          </a>
-        </div>
-      </header>
+        </header>
+      </section>
+
       <!-- end header -->
       <section>
-        <div class="contain hero-section">
-          <div class="left-hero-section">
-            <div class="section-left">
-              <h1>transforming ideas into</h1>
-              <h2>digital success</h2>
-            </div>
+        <div class="child2">
+          <div class="container hero-section">
+            <div class="left-hero-section">
+              <div class="section-left">
+                <h1>transforming ideas into</h1>
+                <h2 class="typing-animation">digital success</h2>
+              </div>
+              <div class="support__performance d-flex support24-7">
+                <div class="d-flex support24-7">
+                  <figure class="text-primary mb-0">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.25 11.9994C2.25 11.2426 2.33278 10.5061 2.48954 9.79839C3.52877 11.4668 4.9817 12.8444 6.70303 13.7805C6.89642 15.2744 7.31649 16.8492 7.91754 18.3021C8.4287 19.5376 9.08647 20.7226 9.87759 21.7036C5.52106 20.7171 2.25 16.7562 2.25 11.9994Z" fill="currentColor" fill-opacity="0.25"></path>
+                      <path d="M6.58273 11.9511C5.09625 10.9367 3.89759 9.51584 3.14064 7.84162C4.39913 5.05845 6.8817 2.97347 9.87759 2.2951C9.08647 3.2761 8.4287 4.46106 7.91754 5.69662C7.07721 7.72786 6.59064 9.99757 6.58273 11.9511Z" fill="currentColor" fill-opacity="0.25"></path>
+                      <path d="M16.0799 18.3021C15.5688 19.5376 14.911 20.7226 14.1199 21.7036C18.4764 20.7171 21.7475 16.7562 21.7475 11.9994C21.7475 11.2426 21.6647 10.5061 21.508 9.79841C20.4687 11.4668 19.0158 12.8445 17.2944 13.7805C17.1011 15.2744 16.681 16.8492 16.0799 18.3021Z" fill="currentColor" fill-opacity="0.25"></path>
+                      <path d="M17.4148 11.9511C18.9012 10.9367 20.0999 9.51585 20.8569 7.84164C19.5984 5.05847 17.1158 2.97347 14.1199 2.29511C14.911 3.2761 15.5688 4.46106 16.0799 5.69662C16.9203 7.72786 17.4069 9.99758 17.4148 11.9511Z" fill="currentColor" fill-opacity="0.25"></path>
+                      <path d="M9.3035 6.27003C10.0004 4.58556 10.9365 3.14358 11.9986 2.25C13.0608 3.14358 13.9969 4.58556 14.6938 6.27003C15.4761 8.16121 15.9147 10.2571 15.9147 11.9993C15.9147 12.26 15.9049 12.5287 15.8856 12.8033C14.694 13.3321 13.3792 13.625 11.9986 13.625C10.618 13.625 9.30329 13.3321 8.11167 12.8033C8.09234 12.5287 8.08252 12.26 8.08252 11.9993C8.08252 10.2571 8.52111 8.16121 9.3035 6.27003Z" fill="#17a2b8"></path>
+                      <path d="M11.9986 15.125C13.2807 15.125 14.5119 14.907 15.6587 14.5059C15.4523 15.5799 15.1253 16.6854 14.6938 17.7287C13.9969 19.4131 13.0608 20.8551 11.9986 21.7487C10.9365 20.8551 10.0004 19.4131 9.3035 17.7287C8.87192 16.6854 8.54495 15.5799 8.3385 14.5059C9.48539 14.907 10.7166 15.125 11.9986 15.125Z" fill="#17a2b8"></path>
+                    </svg>
+                  </figure>
+                  <div class="d-flex">
+                    <div class="ms-3">
+                      <h6 class="mb-1">24/7 Support</h6>
+                      <p class="mb-0">We're always here to help</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex support24-7">
+                  <!-- Svg icon -->
+                  <figure class="text-primary mb-0">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.55681 21.7488H15.443C17.9932 21.7488 19.2684 21.7488 19.8663 21.0613C20.054 20.8455 20.1933 20.5919 20.2746 20.3176C20.5338 19.4441 19.8493 18.3682 18.4804 16.2165L18.3427 16C15 19.5 9 19.5 5.65709 16L5.51933 16.2166C4.15054 18.3683 3.46614 19.4441 3.72526 20.3176C3.80662 20.5919 3.94586 20.8455 4.1336 21.0614C4.73154 21.7488 6.00663 21.7488 8.55681 21.7488Z" fill="#17a2b8" fill-opacity="0.25"></path>
+                      <path d="M19.5 9.75C19.5 12.0563 18.459 14.1195 16.8212 15.4953C15.5176 16.5904 13.8358 17.25 12 17.25C10.164 17.25 8.48209 16.5903 7.17838 15.495C5.54084 14.1192 4.5 12.0561 4.5 9.75C4.5 5.60786 7.85786 2.25 12 2.25C16.1421 2.25 19.5 5.60786 19.5 9.75Z" fill="#17a2b8"></path>
+                    </svg>
+                  </figure>
 
-            <!-- <div class="review-section">
-              <img src="images/logo/Reviews.svg" alt="" />
-            </div> -->
-          </div>
-          <div class="right-hero-section">
-            <div class="section-right">
-              <img src="images/hero image/Hero Image_croped.svg" alt="" />
+                  <div class="ms-3">
+                    <h6 class="mb-1">Award agency</h6>
+                    <p class="mb-0">You are in safe hand</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container d-inline-block bg-dark rounded-4 mb-md-4 ms-md-n5 p-3">
+                <div class="d-flex gap">
+                  <h6 class="text-white mb-0 me-2">5K+</h6>
+                  <ul class="avatar-group mb-0 align-items-center">
+                    <li class="avatar avatar-xs">
+                      <img class="avatar-img rounded-circle" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UEVPUExFfGVufDB8fDB8fHww" alt="avatar" />
+                    </li>
+                    <li class="avatar avatar-xs">
+                      <img class="avatar-img rounded-circle" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UEVPUExFfGVufDB8fDB8fHww" alt="avatar" />
+                    </li>
+                    <li class="avatar avatar-xs">
+                      <img class="avatar-img rounded-circle" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UEVPUExFfGVufDB8fDB8fHww" alt="avatar" />
+                    </li>
+                    <li class="avatar avatar-xs">
+                      <img class="avatar-img rounded-circle" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UEVPUExFfGVufDB8fDB8fHww" alt="avatar" />
+                    </li>
+                    <li class="avatar avatar-xs">
+                      <img class="avatar-img rounded-circle" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UEVPUExFfGVufDB8fDB8fHww" alt="avatar" />
+                    </li>
+                  </ul>
+                </div>
+                <p class="text-white mb-0 mt-2">Total visitors per month</p>
+              </div>
+            </div>
+            <div class="right-hero-section">
+              <div class="section-right">
+                <img src="images/hero image/Hero Image_croped.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- section end -->
       <section>
-        <div class="contain company-heading">
-          <h1>companies work</h1>
-        </div>
-        <div class="company-slides">
-          <div class="company-logo">
-            <img src="images/icons/image1.svg" alt="" />
-            <img src="images/icons/image7.svg" alt="" />
-            <img src="images/icons/image9.svg" alt="" />
-            <img src="images/icons/image8.svg" alt="" />
-            <img src="images/icons/image7.svg" alt="" />
-            <img src="images/icons/image1.svg" alt="" />
-            <img src="images/icons/image7.svg" alt="" />
-            <img src="images/icons/image9.svg" alt="" />
-            <img src="images/icons/image8.svg" alt="" />
-            <img src="images/icons/image7.svg" alt="" />
+        <div class="child3">
+          <div class="company-heading">
+            <h1>companies work</h1>
           </div>
-          <div class="company-logo">
-            <img src="images/icons/image1.svg" alt="" />
-            <img src="images/icons/image7.svg" alt="" />
-            <img src="images/icons/image9.svg" alt="" />
-            <img src="images/icons/image8.svg" alt="" />
-            <img src="images/icons/image7.svg" alt="" />
-            <img src="images/icons/image1.svg" alt="" />
-            <img src="images/icons/image7.svg" alt="" />
-            <img src="images/icons/image9.svg" alt="" />
-            <img src="images/icons/image8.svg" alt="" />
-            <img src="images/icons/image7.svg" alt="" />
+          <div class="company-slides">
+            <div class="company-logo">
+              <img src="images/icons/image1.svg" alt="" />
+              <img src="images/icons/image7.svg" alt="" />
+              <img src="images/icons/image9.svg" alt="" />
+              <img src="images/icons/image8.svg" alt="" />
+              <img src="images/icons/image7.svg" alt="" />
+              <img src="images/icons/image1.svg" alt="" />
+              <img src="images/icons/image7.svg" alt="" />
+              <img src="images/icons/image9.svg" alt="" />
+              <img src="images/icons/image8.svg" alt="" />
+              <img src="images/icons/image7.svg" alt="" />
+            </div>
+            <div class="company-logo">
+              <img src="images/icons/image1.svg" alt="" />
+              <img src="images/icons/image7.svg" alt="" />
+              <img src="images/icons/image9.svg" alt="" />
+              <img src="images/icons/image8.svg" alt="" />
+              <img src="images/icons/image7.svg" alt="" />
+              <img src="images/icons/image1.svg" alt="" />
+              <img src="images/icons/image7.svg" alt="" />
+              <img src="images/icons/image9.svg" alt="" />
+              <img src="images/icons/image8.svg" alt="" />
+              <img src="images/icons/image7.svg" alt="" />
+            </div>
           </div>
         </div>
       </section>
       <!-- 2nd section -->
       <section>
-        <div class="contain our-services">
-          <h1>we offers</h1>
-        </div>
-      </section>
-      <!-- section end -->
-      <section>
-        <div class="plans">
-          <div class="left-plan">
-            <p>Digital Strategy and Plaining</p>
-            <p>Social Media Management</p>
-            <p>Social Media Campaigns advertisement</p>
-            <p>PPC compaigns advertisement</p>
-            <p>SEO</p>
-          </div>
-        </div>
-      </section>
-      <!-- section end -->
-      <section>
-        <div class="contain portfolio-heading">
-          <h1>portfolio</h1>
-        </div>
-        <div class="portfolio-container scroller">
-          <div class="portfolio-wrapper swiper-wrapper">
-            <div class="swiper-slide" data-slide-index="1">
-              <div class="our-agenda portfolio-container">
-                <div class="our-image">
-                  <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
-                </div>
+        <div class="child4">
+          <div class="outer-container">
+            <div class="container position-relative">
+              <figure class="position-absolute top-0 end-0 me-n9 mt-n7 d-none d-md-block">
+                <svg fill="#fff" class="fill-white" width="768.8px" height="1386px" viewBox="0 0 768.8 1386" style="enable-background: new 0 0 768.8 1386; opacity: 0.07" xml:space="preserve">
+                  <path d="M647.6,748.4c1.9,6,3.3,12.2,3.8,18.4c2.2,18.9-0.7,38.9-9.1,61.5c-15.6,41.9-47.8,85.3-81.6,131.5 c-46.1,63.1-94.5,128.4-108.1,199.1c-15.7,80.6,17.2,154.5,101.1,226.1l-0.4,0.4c-188.1-160.7-84.4-301.8,7.3-426.2 c33.9-46,65.8-89.6,81.4-131.2c17.5-46.8,11.8-84.9-18-119.6c-39.6-46.6-86.5-86.9-135.7-129.3C339.1,450.3,184.9,317.3,240.6,4.6 l0.6,0.1C185.7,317,339.7,450.1,488.7,578.7c49.3,42.7,95.8,82.8,135.8,129.6C635.5,721,643.1,734.2,647.6,748.4z"></path>
+                  <path d="M636.2,722.3c23.4,73.7-25.2,149.2-76.5,228.7c-40.8,63.5-83,129.1-91.9,198.3c-9.9,78.2,25.9,150,109.6,219 l-0.4,0.7c-45-37.1-75.4-74-93.5-112.7c-15.9-34.5-21.2-69.5-16.5-106.8c8.9-69.5,51-135.1,91.9-198.6 C616.4,861.3,671,776.5,622,694.1c-39.6-66.6-102.4-118.8-169-174.2c-68.7-57.3-140-116.4-188.1-195.3 c-25.9-42.6-42.9-86.9-51.5-135.2c-9.8-54.6-9.2-112.9,2-177.9l0.6,0.1c-46.5,271.4,97.9,391.7,237.5,507.9 c66.7,55.4,129.4,107.7,169.1,174.5C628.8,702.7,633.1,712.6,636.2,722.3z"></path>
+                  <path d="M624.6,687.5c11.7,37,10.5,76.9-3.8,121.9c-13.7,43.3-38.1,87.4-61.8,130.2c-35.7,64.2-72.5,130.4-76.3,198.6 c-4.4,76.5,34.5,146.1,118.7,213.3l-0.6,0.8c-188.5-150.2-114.3-284-42.6-413.2c49.3-88.7,95.7-172.7,62.4-260.6 c-31.5-83-108.5-141.7-189.7-204C363,422.5,293.2,369,244.9,298c-26.1-38.5-43.3-78.4-53-121.8C181.2,127,180.6,75,190.2,16.8l0.9,0 C151,259.3,293.5,368.3,431.2,473.7c81.5,62.2,158.3,121.3,190.1,204.2C622.6,681.2,623.6,684.4,624.6,687.5z"></path>
+                  <path d="M614.6,642.5c2.2,6.8,4.1,13.7,5.4,20.8c18.1,91.8-22.3,177.4-61.1,260.2c-32.2,68.8-62.8,133.6-62.1,201.3 c0.8,76.3,41.6,143,128.7,209.2l-0.6,0.8c-46.1-35.1-78.8-70-100.3-106.8c-19.1-32.9-28.6-66.6-28.9-103.1 c-0.6-67.6,29.8-132.7,62.3-201.6c38.8-82.7,79-168.2,60.9-259.8c-19.1-96.7-109.2-158.6-204.5-224.2 c-68.3-47.1-139.2-95.6-188.9-160.4c-56.1-73.2-75.8-157-60.3-255.8l0.9,0c-34.9,220.7,109.1,319.7,248.6,415.2 C503.4,499.3,587.6,557.2,614.6,642.5z"></path>
+                  <path d="M610.8,603.9c4.4,13.9,7.1,28.7,7.8,44.6c3.6,91.5-28.4,172.7-59.3,251.2c-28.5,72.3-55.1,140.5-50.2,208.8 c5.2,76.6,49.9,143,140.1,208.8l-0.4,0.7c-90.5-66-135.2-132.4-140.8-209.2c-5-68.6,21.9-136.9,50.3-209.4 c30.9-78.5,62.6-159.6,59.1-250.9c-4.2-109-107.3-171.8-216.8-238.5c-70.1-42.7-142.8-87-194.2-146.1 c-58.1-66.8-79.9-143.6-66-234.6l1,0.3c-30.7,202.9,117.1,292.9,259.8,379.6C494.9,466.2,584.1,520.8,610.8,603.9z"></path>
+                  <path d="M610.7,570.7c6.1,19.2,8.4,40.1,6,62.8c-8.3,84.1-33.8,160.3-55.9,227.3c-27.6,83.2-51.4,154.9-42.7,226 c9.5,78.4,58.7,146,155,213l-0.6,0.8c-96.5-66.7-145.8-134.6-155.4-213.2c-8.8-71.4,15.2-143.4,42.8-226.7 c22.3-67.1,47.6-143.3,55.9-227.3c12-120.7-104.2-182.9-227.6-248.9c-72.3-38.6-147.1-78.7-200.6-132.7 c-60.6-61-84.2-131.8-72-216.2l1.2,0.2C89.9,223.5,242,305,389.1,383.7C488.9,437.2,584.6,488.6,610.7,570.7z"></path>
+                  <path d="M613,540.8c7.3,23.1,8.5,48.7,1.9,77.9c-14,63.3-31.8,122.1-47.4,173.8c-30,99.3-56,185.2-45,263.4 c11.7,84.3,67.2,156.6,174.2,227.2l-0.5,1c-56.6-37.2-98.1-74.3-126.8-113.1c-26.6-35.7-42.3-73.2-47.9-114.7 c-11.1-78.8,14.9-164.4,45.1-264c15.7-51.7,33.4-110.5,47.5-173.6C643.5,486.7,513.4,426,375.8,361.9 c-74.9-34.9-152.2-71-207.6-120.1c-63-55.7-88.3-121-78-199.6l1.1-0.1c-10.5,78.1,14.8,143.1,77.7,198.6 c55.4,49.1,132.7,85.3,207.5,119.9C484,410.7,587.1,458.9,613,540.8z"></path>
+                  <path d="M617.2,512.9c8.3,26.2,8,56.1-3.5,90.9c-5.6,17.1-11.2,33.9-16.5,50c-47.8,143.4-85.7,256.4-76.5,351.9 c9.7,99.7,71.5,180,200.4,260.4l-0.5,1c-67.3-41.9-115.6-83.2-148.1-126.6c-30.9-41-48.1-85.2-52.8-134.8 c-9.3-95.8,28.8-208.9,76.6-352.3c5.6-16.2,10.9-32.9,16.5-50c47.5-143.5-96.3-201.6-248.6-263.1c-77.7-31.1-157.6-63.5-215.4-108.2 C83.3,181.7,56.1,121.4,65.2,48l1.2,0.2c-9,72.7,18.1,132.8,83.1,183c57.8,44.6,137.6,76.8,214.8,108.1 C480.2,386,591.2,431,617.2,512.9z"></path>
+                  <path d="M622.4,486.7c9.6,30.2,6.1,63.9-10.3,102.3C465,933,463,1084.4,745.1,1249l-0.8,1.1 c-143.5-83.6-211.5-162.5-227.9-263.5c-17.4-106.8,25.3-236.4,94.5-398.1c18.6-43.4,20.4-80.4,6-113.1 C583.7,401.1,471.1,362,351.5,320.8C189.7,265,22.7,207.3,40,54.3l1.2,0.2C23.8,206.4,190.5,263.8,351.7,319.6 C471.4,361,584.6,400,617.6,475C619.7,478.9,621.2,482.8,622.4,486.7z"></path>
+                  <path d="M628.6,461.4c10.3,32.5,4.4,69.6-18,112.8c-93.9,182.2-122.9,308.3-94.5,408.8c26.1,92.5,101.7,167,252.8,249 l-0.8,1.1c-151.5-82.5-227.2-157.2-253.6-249.9c-28.5-100.7,0.5-227.1,94.5-409.9c24.3-47.3,29-87.1,14.3-121.5 c-32.7-76-155.1-112-284.6-149.7C172.6,253.7,0.1,203.5,15.1,60.4l1.2,0.2c-14.6,141.8,157,191.9,323.2,240.6 c129.9,37.9,252.4,73.9,285.3,150.4C626.2,454.9,627.5,458,628.6,461.4z"></path>
+                </svg>
+              </figure>
+              <div class="text-container">
+                <span>🚀 Innovative solutions, Measurable results</span>
+                <h1>
+                  We specialize in the following <br />
+                  services
+                </h1>
               </div>
-            </div>
-            <div class="swiper-slide" data-slide-index="1">
-              <div class="our-agenda portfolio-container">
-                <div class="our-image">
-                  <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" data-slide-index="1">
-              <div class="our-agenda portfolio-container">
-                <div class="our-image">
-                  <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" data-slide-index="1">
-              <div class="our-agenda portfolio-container">
-                <div class="our-image">
-                  <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" data-slide-index="1">
-              <div class="our-agenda portfolio-container">
-                <div class="our-image">
-                  <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- section end -->
-      <section>
-        <div class="contain about-us-heading">
-          <h1>about us</h1>
-        </div>
-        <div class="contain about-container">
-          <div class="pargraph-container">
-            <p>Qonkar is your trusted partner. We help business each their full potential by providing expert solutions that drive growth and success. Let us help you take your business to the next level. Qonkar is your trusted partner. We help business each their full potential by providing expert solution that drive growth and success. Let us help you take your business to the next level.</p>
-          </div>
-          <div class="image-about-container">
-            <img src="images/hero image/range-rover.webp" loading="lazy" alt="Qonkar about-us image" />
-          </div>
-        </div>
-      </section>
-      <!-- section end -->
-      <section>
-        <div class="contain about-blogs">
-          <h1>blogs</h1>
-        </div>
-        <div class="contain about-blogs-container">
-          <div class="blogs-container">
-            <div class="blogs-image">
-              <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
-            </div>
-            <div class="blogs-text">
-              <h3>Qonkar Technologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</h3>
-            </div>
-          </div>
-          <div class="blogs-container">
-            <div class="blogs-image">
-              <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
-            </div>
-            <div class="blogs-text">
-              <h3>Qonkar Technologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</h3>
-            </div>
-          </div>
-          <div class="blogs-container">
-            <div class="blogs-image">
-              <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
-            </div>
-            <div class="blogs-text">
-              <h3>Qonkar Technologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</h3>
-            </div>
-          </div>
-        </div>
-        <div class="view-more">
-          <button class="learn-more">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Learn More</span>
-          </button>
-        </div>
-      </section>
-      <!-- section end -->
-      <section>
-        <div class="contain methadologies-heading">
-          <h1>methadologies</h1>
-        </div>
-        <div class="contain paragraph-methadologies">
-          <p>Qonkar Technologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</p>
-        </div>
-        <div class="contain methodologist-svg">
-          <div class="svg-container">
-            <div class="svg-icon">
-              <img src="images/SVG/people.svg" alt="" />
-            </div>
-            <div class="svg-text">
-              <h5>
-                discovery & <br />
-                consultantancy<i class="ri-arrow-down-s-line"></i>
-              </h5>
-            </div>
-          </div>
-          <div class="svg-container">
-            <div class="svg-icon">
-              <img src="images/SVG/card.svg" alt="" />
-            </div>
-            <div class="svg-text">
-              <h5>
-                in-depth <br />
-                analysis<i class="ri-arrow-down-s-line"></i>
-              </h5>
-            </div>
-          </div>
-          <div class="svg-container">
-            <div class="svg-icon">
-              <img src="images/SVG/achievement.svg" alt="" />
-            </div>
-            <div class="svg-text">
-              <h5>customize <br />strategy<i class="ri-arrow-down-s-line"></i></h5>
-            </div>
-          </div>
-          <div class="svg-container">
-            <div class="svg-icon">
-              <img src="images/SVG/certified.svg" alt="" />
-            </div>
-            <div class="svg-text">
-              <h5>implementing <br />excellence<i class="ri-arrow-down-s-line"></i></h5>
-            </div>
-          </div>
-          <div class="svg-container">
-            <div class="svg-icon">
-              <img src="images/SVG/search.svg" alt="" />
-            </div>
-            <div class="svg-text">
-              <h5>
-                monetoring & <br />
-                optimizing<i class="ri-arrow-down-s-line"></i>
-              </h5>
-            </div>
-          </div>
-          <div class="svg-container">
-            <div class="svg-icon">
-              <img src="images/SVG/clipborad.svg" alt="" />
-            </div>
-            <div class="svg-text">
-              <h5>
-                transparent <br />
-                reporting<i class="ri-arrow-down-s-line"></i>
-              </h5>
-            </div>
-          </div>
-          <div class="svg-container">
-            <div class="svg-icon">
-              <img src="images/SVG/static.svg" alt="" />
-            </div>
-            <div class="svg-text">
-              <h5>our plans<i class="ri-arrow-down-s-line"></i></h5>
-            </div>
-          </div>
-          <div class="contain strategy-container">
-            <div class="startegy-paragraph">
-              <p>With our strategic and data-driven approach, we empower your business to thrive in a competitive digital landscape. Let's embark on a transformative journey together!</p>
-            </div>
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">Learn More</span>
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- section end -->
-      <section>
-        <div class="contain industry-heading">
-          <h1>industrial expertise</h1>
-        </div>
-        <div class="contain industrial-expertise">
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/health and safety.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>
-                health & <br />
-                care center
-              </h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/banking.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>
-                banking & <br />
-                financial
-              </h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/real state.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>real state</h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/public.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>public sectors</h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/school field.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>education <br />system</h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/health and safety.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>
-                health & <br />
-                care center
-              </h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/banking.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>
-                banking & <br />
-                financial
-              </h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/real state.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>real state</h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/public.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>public sectors</h5>
-            </div>
-          </div>
-          <div class="industry-svg">
-            <div class="svg-icons-head">
-              <img src="images/SVG/school field.svg" alt="" />
-            </div>
-            <div class="svg-title">
-              <h5>education <br />system</h5>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- section end -->
-      <section>
-        <div class="contain Testimonial-heading">
-          <h1>testimonials</h1>
-        </div>
-        <div class="contain testimonial-container">
-          <div class="card">
-            <div class="card__border">
-              <img src="images/logo/profile-img.png" alt="card image" class="card__img" />
-            </div>
-            <h3 class="card__name">HAFSA MALIK</h3>
-            <span class="card__profession">UI/UX Designer</span>
-            <p class="card-review">Qonkar Technologies is a premium full-service agency elevate service businesses globally.</p>
-
-            <div class="card__social" id="card-social">
-              <div class="card__social-control">
-                <ul class="card__social-list">
-                  <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                    <i class="ri-facebook-line"></i>
-                  </a>
-
-                  <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-
-                  <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__border">
-              <img src="images/logo/profile-img.png" alt="card image" class="card__img" />
-            </div>
-            <h3 class="card__name">HAFSA MALIK</h3>
-            <span class="card__profession">UI/UX Designer</span>
-            <p class="card-review">Qonkar Technologies is a premium full-service agency elevate service businesses globally.</p>
-
-            <div class="card__social" id="card-social">
-              <div class="card__social-control">
-                <ul class="card__social-list">
-                  <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                    <i class="ri-facebook-line"></i>
-                  </a>
-
-                  <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-
-                  <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__border">
-              <img src="images/logo/profile-img.png" alt="card image" class="card__img" />
-            </div>
-            <h3 class="card__name">HAFSA MALIK</h3>
-            <span class="card__profession">UI/UX Designer</span>
-            <p class="card-review">Qonkar Technologies is a premium full-service agency elevate service businesses globally.</p>
-
-            <div class="card__social" id="card-social">
-              <div class="card__social-control">
-                <ul class="card__social-list">
-                  <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                    <i class="ri-facebook-line"></i>
-                  </a>
-
-                  <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-
-                  <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__border">
-              <img src="images/logo/profile-img.png" alt="card image" class="card__img" />
-            </div>
-            <h3 class="card__name">HAFSA MALIK</h3>
-            <span class="card__profession">UI/UX Designer</span>
-            <p class="card-review">Qonkar Technologies is a premium full-service agency elevate service businesses globally.</p>
-
-            <div class="card__social" id="card-social">
-              <div class="card__social-control">
-                <ul class="card__social-list">
-                  <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                    <i class="ri-facebook-line"></i>
-                  </a>
-
-                  <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-
-                  <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- section end -->
-      <section>
-        <div class="contain contact-us-heading">
-          <h1>contact us</h1>
-        </div>
-        <div class="contain contact-container">
-          <div class="contact-us-details">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae maiores vitae suscipit facilis dicta . Maiores vero quaerat facere nulla quis, architecto delectus veritatis commodi dignissimos, consequatur, expedita dicta? Distinctio quas totam nemo iusto?</p>
-            <br />
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae maiores vitae suscipit facilis dicta . Maiores vero quaerat facere nulla quis, architecto delectus veritatis commodi dignissimos, consequatur, expedita dicta? Distinctio quas totam nemo iusto?</p>
-          </div>
-          <div class="contact-us-form">
-            <div class="Email-container">
-              <form action="" class="form" id="form">
-                <div class="forms-fieldset">
-                  <div class="form__field">
-                    <label for="email" class="form__label">Email Address</label>
-                    <input type="email" placeholder="Email" required id="email" class="form__input" />
-
-                    <i class="ri-mail-fill form__icon"></i>
-
-                    <div class="form__error">
-                      <i class="ri-information-fill"></i>
-                      <span>Invalid email format.</span>
-                    </div>
+              <div class="text-grid-container position-relative">
+                <div class="text-grid-arrows">
+                  <div class="icon">
+                    <i class="bi bi-stack fa-fw fs-5"></i>
                   </div>
-                  <div class="form__field">
-                    <label for="password" class="form__label">password</label>
-                    <input type="password" placeholder="Password" required id="password" class="form__input" />
-                    <i class="ri-key-fill form__icon"></i>
-                    <div class="form__error">
-                      <i class="ri-information-fill"></i>
-                      <span>Invalid password format.</span>
+                  <h1>digtal marketing</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="know-more-button"><a class="icon-link icon-link-hover" href="#">Know more</a><i class="bi bi-arrow-right"></i></div>
+                </div>
+                <div class="text-grid-arrows">
+                  <div class="icon">
+                    <i class="bi bi-boxes fa-fw fs-5"></i>
+                  </div>
+                  <h1>product design</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="know-more-button"><a class="icon-link icon-link-hover" href="#">Know more</a><i class="bi bi-arrow-right"></i></div>
+                </div>
+                <div class="text-grid-arrows">
+                  <div class="icon">
+                    <i class="bi bi-circle-square fa-fw fs-5"></i>
+                  </div>
+                  <h1>web design</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="know-more-button"><a class="icon-link icon-link-hover" href="#">Know more</a><i class="bi bi-arrow-right"></i></div>
+                </div>
+                <div class="text-grid-arrows">
+                  <div class="icon">
+                    <i class="bi bi-vector-pen fa-fw fs-5"></i>
+                  </div>
+                  <h1>ui/ux design</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="know-more-button"><a class="icon-link icon-link-hover" href="#">Know more</a><i class="bi bi-arrow-right"></i></div>
+                </div>
+                <div class="text-grid-arrows">
+                  <div class="icon">
+                    <i class="bi bi-stack fa-fw fs-5"></i>
+                  </div>
+                  <h1>business strategy</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="know-more-button"><a class="icon-link icon-link-hover" href="#">Know more</a><i class="bi bi-arrow-right"></i></div>
+                </div>
+                <div class="text-grid-arrows">
+                  <div class="icon">
+                    <i class="bi bi-boxes fa-fw fs-5"></i>
+                  </div>
+                  <h1>research</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="know-more-button"><a class="icon-link icon-link-hover" href="#">Know more</a><i class="bi bi-arrow-right"></i></div>
+                </div>
+                <div class="text-grid-arrows">
+                  <div class="icon">
+                    <i class="bi bi-circle-square fa-fw fs-5"></i>
+                  </div>
+                  <h1>web development</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="know-more-button"><a class="icon-link icon-link-hover" href="#">Know more</a><i class="bi bi-arrow-right"></i></div>
+                </div>
+                <div class="text-grid-arrows">
+                  <div class="icon">
+                    <i class="bi bi-vector-pen fa-fw fs-5"></i>
+                  </div>
+                  <h1>brand design</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="know-more-button"><a class="icon-link icon-link-hover" href="#">Know more</a><i class="bi bi-arrow-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section end -->
+      <!-- section end -->
+      <section>
+        <div>
+          <div class="child5">
+            <div class="portfolio-heading">
+              <h1>portfolio</h1>
+            </div>
+            <div class="portfolio-container scroller">
+              <div class="portfolio-wrapper swiper-wrapper">
+                <div class="swiper-slide" data-slide-index="1">
+                  <div class="our-agenda portfolio-container">
+                    <div class="our-image">
+                      <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
                     </div>
                   </div>
                 </div>
-                <div class="form-fill">
-                  <textarea name="" id="textarea" placeholder="Message"></textarea>
+                <div class="swiper-slide" data-slide-index="1">
+                  <div class="our-agenda portfolio-container">
+                    <div class="our-image">
+                      <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
+                    </div>
+                  </div>
                 </div>
-                <div class="submit">
-                  <input type="submit" value="submit" class="btn" />
+                <div class="swiper-slide" data-slide-index="1">
+                  <div class="our-agenda portfolio-container">
+                    <div class="our-image">
+                      <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
+                    </div>
+                  </div>
                 </div>
-              </form>
+                <div class="swiper-slide" data-slide-index="1">
+                  <div class="our-agenda portfolio-container">
+                    <div class="our-image">
+                      <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-slide-index="1">
+                  <div class="our-agenda portfolio-container">
+                    <div class="our-image">
+                      <img src="images/hero image/range-rover.webp" loading="lazy" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- section end -->
-      <footer>
+      <section>
+        <div class="child6">
+          <div class="about-us-heading">
+            <h1>about us</h1>
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+      <section>
+        <div class="child7">
+          <div class="about-blogs">
+            <h1>blogs</h1>
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+      <section>
+        <div class="child8">
+          <div class="faq-heading">
+            <h1>faqs</h1>
+          </div>
+          <div class="container accordian-group">
+            <div class="accordion">
+              <div class="tab">
+                <input type="checkbox" name="accordion-1" id="cb1" checked />
+                <label for="cb1" class="tab__label">frequently ask questions</label>
+                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <div class="tab__content">
+                  <p>Qonkar Technologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</p>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="checkbox" name="accordion-1" id="cb2" />
+                <label for="cb2" class="tab__label">frequently ask questions</label>
+                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <div class="tab__content">
+                  <p>Qonkar Technologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</p>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="checkbox" name="accordion-1" id="cb3" />
+                <label for="cb3" class="tab__label">frequently ask questions</label>
+                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <div class="tab__content">
+                  <p>Qonkar Technologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</p>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="checkbox" name="accordion-1" id="cb4" />
+                <label for="cb4" class="tab__label">frequently ask questions</label>
+                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <div class="tab__content">
+                  <p>Qonkar Technologies is a premium full-service agency offering Development, Design, Digital Marketing, and Production services. Our mission is to redefine excellence by providing top-notch solutions to elevate businesses globally.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+      <section>
+        <div class="child9">
+          <div class="industry-heading">
+            <h1>industrial expertise</h1>
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+      <section>
+        <div class="child10">
+          <div class="Testimonial-heading">
+            <h1>testimonials</h1>
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+      <section>
+        <div class="child11">
+          <div class="contact-us-heading">
+            <h1>contact us</h1>
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+      <!-- <footer>
         <div class="contain footer-text">
           <div class="footer-left">
             <img src="images/logo/Qonkar Logo Capital.png" alt="" />
@@ -626,7 +472,7 @@
           <h5>Linkedin</h5>
           <h5>Instagram</h5>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </body>
 </html>
