@@ -15,14 +15,17 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js" integrity="sha512-ioFpA4cD4gmoOhHglW4f6gep7w+YL7UMKtXx4ebJ5NN4SscmnZYYmSjkA+DaHGvBI4wpYVPx2C7DmmV9TgbIbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="javascript/script.js" defer></script>
   </head>
-  <body>
-    <!-- <div id="loading__animation">
+  <body class="homepage">
+    <div id="loading__animation">
       <h1>• Hello</h1>
       <h1>•Salām (سلام)</h1>
       <h1>• Cześć</h1>
@@ -30,8 +33,13 @@
       <h1>• Bonjour</h1>
       <h1>• ola`</h1>
       <h1>• Ciao</h1>
-    </div> -->
+    </div>
     <div class="main">
+      <div class="circle__up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#2ab9c0" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path class="circle" d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+        </svg>
+      </div>
       <section>
         <header>
           <div class="child1">
@@ -42,26 +50,82 @@
               <div class="navbar">
                 <ul class="navlinks">
                   <a href="#">home</a>
-                  <a href="#">services</a>
                   <a href="#">portfolio</a>
                   <a href="#">career</a>
                   <a href="#">about us</a>
+                  <div class="menu__wrapper">
+                    <div class="menu__bar">
+                      <ul class="navigation hide">
+                        <li>
+                          <button>
+                            services
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16">
+                              <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
+                            </svg>
+                          </button>
+                          <div class="dropdown__wrapper">
+                            <div class="dropdown__item">
+                              <ul class="list-items-with-description">
+                                <li>
+                                  <div class="item-title">
+                                    <h3>Previews</h3>
+                                    <p>qonkar Technologies</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-title">
+                                    <h3>Infrastructure</h3>
+                                    <p>qonkar Technologies</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-title">
+                                    <h3>Next js</h3>
+                                    <p>qonkar Technologies</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-title">
+                                    <h3>Edge Functions</h3>
+                                    <p>qonkar Technologies</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-title">
+                                    <h3>Analytics</h3>
+                                    <p>qonkar Technologies</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-title">
+                                    <h3>Storage</h3>
+                                    <p>qonkar Technologies</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="btn-conteiner">
+                    <a class="btn-content" href="#">
+                      <span class="btn-title">get started</span>
+                      <span class="icon-arrow">
+                        <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                            <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                            <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                          </g>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
                 </ul>
-                <div class="btn-conteiner">
-                  <a class="btn-content" href="#">
-                    <span class="btn-title">get started</span>
-                    <span class="icon-arrow">
-                      <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                          <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                          <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                        </g>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
               </div>
+
               <div class="hamburger">
                 <input id="menu__toggle" type="checkbox" />
                 <label for="menu__toggle" class="menu__btn">
@@ -87,7 +151,7 @@
             <div class="left-hero-section">
               <div class="section-left">
                 <h1>transforming ideas into</h1>
-                <h2 class="typing-animation">digital success</h2>
+                <span class="typed"></span>
               </div>
               <div class="support__performance d-flex support24-7">
                 <div class="d-flex support24-7">
@@ -118,8 +182,8 @@
                   </figure>
 
                   <div class="ms-3">
-                    <h6 class="mb-1">Award winning agency</h6>
-                    <p class="mb-0">You are in safe hand</p>
+                    <h6 class="mb-3">Award winning agency</h6>
+                    <p class="mb-4">You are in safe hand</p>
                   </div>
                 </div>
               </div>
@@ -144,7 +208,7 @@
                     </li>
                   </ul>
                 </div>
-                <p class="text-white mb-0 mt-2">Total visitors per month</p>
+                <p class="text-white mb-5 mt-2">Total visitors per month</p>
               </div>
             </div>
             <div class="right-hero-section">
@@ -210,10 +274,7 @@
               </figure>
               <div class="text-container">
                 <span> Innovative solutions, Measurable results</span>
-                <h1>
-                  We specialize in the following <br />
-                  services
-                </h1>
+                <h1>We specialize in the following services</h1>
               </div>
               <div class="text-grid-container position-relative">
                 <div class="text-grid-arrows">
@@ -362,7 +423,7 @@
             <div class="accordion">
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb1" checked />
-                <label for="cb1" class="tab__label">frequently ask questions</label>
+                <label for="cb1" class="tab__label">faqs</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -372,7 +433,7 @@
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb2" />
-                <label for="cb2" class="tab__label">frequently ask questions</label>
+                <label for="cb2" class="tab__label">faqs</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -382,7 +443,7 @@
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb3" />
-                <label for="cb3" class="tab__label">frequently ask questions</label>
+                <label for="cb3" class="tab__label">faqs</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -392,7 +453,7 @@
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb4" />
-                <label for="cb4" class="tab__label">frequently ask questions</label>
+                <label for="cb4" class="tab__label">faqs </label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -433,56 +494,56 @@
             </div>
             <div id="bank-accounts">
               <a href="#uk" class="bank-account">
-                <img class="flag" aria-hidden="true" src="profile-img.png" alt="UK" />
+                <img class="flag" aria-hidden="true" src="images/clients/christina.jpg" alt="UK" />
                 <div>
                   <h2 role="presentation">hafsa yasir</h2>
                   <div class="currency">ui/ux designer</div>
                 </div>
               </a>
               <a href="#usa" class="bank-account">
-                <img class="flag" aria-hidden="true" src="profile-img.png" alt="US" />
+                <img class="flag" aria-hidden="true" src="images/clients/hafsa.jpg" alt="US" />
                 <div>
                   <h2 role="presentation">hafsa yasir</h2>
                   <div class="currency">ui/ux designer</div>
                 </div>
               </a>
               <a href="#eu" class="bank-account">
-                <img class="flag" aria-hidden="true" src="profile-img.png" alt="EU" />
+                <img class="flag" aria-hidden="true" src="images/clients/dempsey.jpg" alt="EU" />
                 <div>
                   <h2 role="presentation">hafsa yasir</h2>
                   <div class="currency">ui/ux designer</div>
                 </div>
               </a>
               <a href="#cz" class="bank-account">
-                <img class="flag" aria-hidden="true" src="profile-img.png" alt="Czech Republic" />
+                <img class="flag" aria-hidden="true" src="images/clients/hafsa.jpg" alt="Czech Republic" />
                 <div>
                   <h2 role="presentation">hafsa yasir</h2>
                   <div class="currency">ui/ux designer</div>
                 </div>
               </a>
               <a href="#chf" class="bank-account">
-                <img class="flag" aria-hidden="true" src="profile-img.png" alt="Czech Republic" />
+                <img class="flag" aria-hidden="true" src="images/clients/hafsa.jpg" alt="Czech Republic" />
                 <div>
                   <h2 role="presentation">hafsa yasir</h2>
                   <div class="currency">ui/ux designer</div>
                 </div>
               </a>
               <a href="#chf" class="bank-account">
-                <img class="flag" aria-hidden="true" src="profile-img.png" alt="Czech Republic" />
+                <img class="flag" aria-hidden="true" src="images/clients/hafsa.jpg" alt="Czech Republic" />
                 <div>
                   <h2 role="presentation">hafsa yasir</h2>
                   <div class="currency">ui/ux designer</div>
                 </div>
               </a>
               <a href="#chf" class="bank-account">
-                <img class="flag" aria-hidden="true" src="profile-img.png" alt="Czech Republic" />
+                <img class="flag" aria-hidden="true" src="images/clients/hafsa.jpg" alt="Czech Republic" />
                 <div>
                   <h2 role="presentation">hafsa yasir</h2>
                   <div class="currency">ui/ux designer</div>
                 </div>
               </a>
               <a href="#chf" class="bank-account">
-                <img class="flag" aria-hidden="true" src="profile-img.png" alt="Czech Republic" />
+                <img class="flag" aria-hidden="true" src="images/clients/hafsa.jpg" alt="Czech Republic" />
                 <div>
                   <h2 role="presentation">hafsa yasir</h2>
                   <div class="currency">ui/ux designer</div>
@@ -607,8 +668,8 @@
                 </div>
               </div>
               <div class="dropdown">
-                <input type="checkbox" name="footer-4" id="ft4" checked />
-                <label for="ft4" class="foot__label">ABOUT US</label>
+                <input type="checkbox" name="footer-4" id="ft5" checked />
+                <label for="ft5" class="foot__label">ABOUT US</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -627,7 +688,7 @@
             </span>
             <p class="text-body-2 legal">
               <span class="copyright text-trunc"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2ab9c0" class="bi bi-c-circle-fill" viewBox="0 0 16 16">
+                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-c-circle-fill" viewBox="0 0 16 16">
                   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c.961 0 1.641.633 1.729 1.512h1.295v-.088c-.094-1.518-1.348-2.572-3.03-2.572-2.068 0-3.269 1.377-3.269 3.638v1.073c0 2.267 1.178 3.603 3.27 3.603 1.675 0 2.93-1.02 3.029-2.467v-.093H9.875c-.088.832-.75 1.418-1.729 1.418-1.224 0-1.927-.891-1.927-2.461v-1.06c0-1.583.715-2.503 1.927-2.503" />
                 </svg>
                 Qonkar privated Ltd. 2024</span
@@ -637,9 +698,11 @@
           <div class="bottom-container-right">
             <ul class="footer-social">
               <li>
-                <a href="https://www.tiktok.com/@qonkar" target="_blank" rel="noopener" class="social-link" aria-label="qonkar on TikTok"
-                  ><label class="social-label">qonkar on TikTok</label><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#74767E"><path d="M10.827 9.644v3.331a6.199 6.199 0 0 0-.478-.09c-1.599-.247-3.06.842-3.299 2.527a2.964 2.964 0 0 0 2.342 3.357c1.612.324 3.21-.855 3.4-2.527.062-.558.037-1.128.037-1.699V1.893h3.173c.34 3.085 2.002 4.77 4.998 5.094v3.24a7.673 7.673 0 0 1-2.594-.427 7.83 7.83 0 0 1-2.354-1.297v.234c0 2.333.013 4.666.013 6.999 0 2.307-.957 4.109-2.833 5.379-1.12.765-2.38 1.076-3.727.972-2.04-.155-3.638-1.114-4.771-2.864-1.75-2.735-1.07-6.455 1.498-8.4 1.31-.985 2.782-1.373 4.381-1.218.063.013.139.026.214.04Z"></path></svg
-                ></a>
+                <a href="https://www.tiktok.com/@qonkar" target="_blank" rel="noopener" class="social-link" aria-label="qonkar on TikTok">
+                  <label class="social-label">qonkar on behance</label>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" fill="#000" class="bi bi-behance" viewBox="0 0 16 16"><path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391s.497.426.641.747c.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922s.461.957.461 1.563c0 .496-.105.922-.285 1.278a2.3 2.3 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.3 5.3 0 0 1-1.278.176L0 12.803V3zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a1 1 0 0 0-.32-.355 1.8 1.8 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305zm6.858-.035q.428.427 1.278.426c.39 0 .746-.106 1.032-.286q.426-.32.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.1 4.1 0 0 1-1.527-.285 2.8 2.8 0 0 1-1.137-.782 2.85 2.85 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4 4 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396m2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176s-.356.25-.496.39a.96.96 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978z"</svg>
+                  ></a
+                >
               </li>
               <li>
                 <a href="#" target="_blank" rel="noopener" class="social-link" aria-label="qonkar on Instagram"
