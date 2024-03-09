@@ -32,7 +32,7 @@ btn.addEventListener("click", () => {
 });
 
 var typed2 = new Typed(".typed", {
-  strings: ["digital <strong>IDEAS</strong>", "digital <strong>SUCCESS</strong>", "UI/UX <strong>DESIGN</strong>"],
+  strings: ["digital IDEAS", "digital SUCCESS", "UI/UX DESIGN"],
   typeSpeed: 50,
   backSpeed: 20,
   cursorChar: "_",
