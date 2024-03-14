@@ -15,13 +15,16 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" href="images/icons/favicon-32x32.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&display=swap" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js" integrity="sha512-ioFpA4cD4gmoOhHglW4f6gep7w+YL7UMKtXx4ebJ5NN4SscmnZYYmSjkA+DaHGvBI4wpYVPx2C7DmmV9TgbIbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js" integrity="sha512-ioFpA4cD4gmoOhHglW4f6gep7w+YL7UMKtXx4ebJ5NN4SscmnZYYmSjkA+DaHGvBI4wpYVPx2C7DmmV9TgbIbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/dist/fullpage.min.js"></script> -->
     <script src="javascript/script.js" defer></script>
   </head>
   <body class="homepage">
@@ -34,13 +37,13 @@
       <h1>• ola`</h1>
       <h1>• Ciao</h1>
     </div>
-    <div class="main">
+    <div class="main" id="fullpage">
       <div class="circle__up">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#2ab9c0" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
           <path class="circle" d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
         </svg>
       </div>
-      <section>
+      <section class="vertical-scrolling">
         <header>
           <div class="child1">
             <div class="container header-container">
@@ -49,6 +52,14 @@
               </div>
               <div class="navbar">
                 <ul class="navlinks">
+                  <!-- <label
+                    >Theme:
+                    <select data-theme-picker name="themepicker" id="theme">
+                       <option value="system">system</option> -->
+                  <!-- <option value="light">light</option>
+                      <option value="dark">dark</option>
+                    </select>
+                  </label> -->
                   <a href="#">home</a>
                   <a href="#">portfolio</a>
                   <a href="#">career</a>
@@ -75,7 +86,10 @@
                                 <li>
                                   <div class="item-title">
                                     <h3>Infrastructure</h3>
-                                    <p>qonkar Technologies</p>
+                                    <p>
+                                      qonkar Technologies <br />
+                                      privated limited
+                                    </p>
                                   </div>
                                 </li>
                                 <li>
@@ -99,6 +113,18 @@
                                 <li>
                                   <div class="item-title">
                                     <h3>Storage</h3>
+                                    <p>qonkar Technologies</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-title">
+                                    <h3>Analytics</h3>
+                                    <p>qonkar Technologies</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-title">
+                                    <h3>Analytics</h3>
                                     <p>qonkar Technologies</p>
                                   </div>
                                 </li>
@@ -142,10 +168,10 @@
             </div>
           </div>
         </header>
-      </section>
+        <!-- </section>
 
-      <!-- end header -->
-      <section>
+     end header -->
+        <!-- <section class="vertical-scrolling"> -->
         <div class="child2">
           <div class="container hero-section">
             <div class="left-hero-section">
@@ -220,41 +246,33 @@
         </div>
       </section>
       <!-- section end -->
-      <section>
+      <section class="vertical-scrolling">
         <div class="child3">
           <div class="company-heading">
             <h1>companies work</h1>
           </div>
-          <div class="company-slides">
-            <div class="company-logo">
-              <img src="images/icons/image1.svg" alt="" />
-              <img src="images/icons/image7.svg" alt="" />
-              <img src="images/icons/image9.svg" alt="" />
-              <img src="images/icons/image8.svg" alt="" />
-              <img src="images/icons/image7.svg" alt="" />
-              <img src="images/icons/image1.svg" alt="" />
-              <img src="images/icons/image7.svg" alt="" />
-              <img src="images/icons/image9.svg" alt="" />
-              <img src="images/icons/image8.svg" alt="" />
-              <img src="images/icons/image7.svg" alt="" />
-            </div>
-            <div class="company-logo">
-              <img src="images/icons/image1.svg" alt="" />
-              <img src="images/icons/image7.svg" alt="" />
-              <img src="images/icons/image9.svg" alt="" />
-              <img src="images/icons/image8.svg" alt="" />
-              <img src="images/icons/image7.svg" alt="" />
-              <img src="images/icons/image1.svg" alt="" />
-              <img src="images/icons/image7.svg" alt="" />
-              <img src="images/icons/image9.svg" alt="" />
-              <img src="images/icons/image8.svg" alt="" />
-              <img src="images/icons/image7.svg" alt="" />
+          <div class="brand-lists">
+            <div class="wrapper">
+              <img src="/images/icons/image1.svg" alt="" />
+              <img src="/images/icons/image7.svg" alt="" />
+              <img src="/images/icons/image8.svg" alt="" />
+              <img src="/images/icons/image7.svg" alt="" />
+              <img src="/images/icons/image1.svg" alt="" />
+              <img src="/images/icons/image7.svg" alt="" />
+              <img src="/images/icons/image8.svg" alt="" />
+              <img src="/images/icons/image7.svg" alt="" />
+              <img src="/images/icons/image7.svg" alt="" />
+              <img src="/images/icons/image8.svg" alt="" />
+              <img src="/images/icons/image7.svg" alt="" />
             </div>
           </div>
         </div>
       </section>
       <!-- 2nd section -->
-      <section>
+      <section class="vertical-scrolling">
+        <div class="our-services">
+          <h1>services we provide</h1>
+        </div>
         <div class="child4 position-relative">
           <div class="outer-container">
             <div class="container position-relative">
@@ -349,13 +367,13 @@
 
       <!-- section end -->
       <!-- section end -->
-      <section>
+      <section class="vertical-scrolling">
         <div>
           <div class="child5">
             <div class="portfolio-heading">
               <h1>portfolio</h1>
             </div>
-            <div class="portfolio-container scroller">
+            <div class="portfolio-container display-none scroller">
               <div class="portfolio-wrapper swiper-wrapper">
                 <div class="swiper-slide" data-slide-index="1">
                   <div class="our-agenda portfolio-container">
@@ -398,23 +416,23 @@
         </div>
       </section>
       <!-- section end -->
-      <section>
+      <!-- <section class="vertical-scrolling">
         <div class="child6">
           <div class="about-us-heading">
             <h1>about us</h1>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- section end -->
-      <section>
+      <!-- <section class="vertical-scrolling">
         <div class="child7">
           <div class="about-blogs">
             <h1>blogs</h1>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- section end -->
-      <section>
+      <section class="vertical-scrolling">
         <div class="child8">
           <div class="faq-heading">
             <h1>faqs</h1>
@@ -423,7 +441,7 @@
             <div class="accordion">
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb1" checked />
-                <label for="cb1" class="tab__label">faqs</label>
+                <label for="cb1" class="tab__label">frequently asks</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -433,7 +451,7 @@
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb2" />
-                <label for="cb2" class="tab__label">faqs</label>
+                <label for="cb2" class="tab__label">frequently asks</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -443,7 +461,7 @@
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb3" />
-                <label for="cb3" class="tab__label">faqs</label>
+                <label for="cb3" class="tab__label">frequently asks</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -453,7 +471,7 @@
               </div>
               <div class="tab">
                 <input type="checkbox" name="accordion-1" id="cb4" />
-                <label for="cb4" class="tab__label">faqs </label>
+                <label for="cb4" class="tab__label">frequently asks </label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -466,15 +484,15 @@
         </div>
       </section>
       <!-- section end -->
-      <section>
+      <!-- <section class="vertical-scrolling">
         <div class="child9">
           <div class="industry-heading">
             <h1>industrial expertise</h1>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- section end -->
-      <section>
+      <section class="vertical-scrolling">
         <div class="child10">
           <div class="Testimonial-heading">
             <h1>testimonials</h1>
@@ -554,14 +572,14 @@
         </div>
       </section>
       <!-- section end -->
-      <section>
+      <!-- <section class="vertical-scrolling">
         <div class="child11">
           <div class="contact-us-heading">
             <h1>contact us</h1>
           </div>
         </div>
-      </section>
-      <footer>
+      </section> -->
+      <footer class="vertical-scrolling">
         <div class="footer-container-div">
           <div class="footer-wrapper">
             <div class="footer-container">
