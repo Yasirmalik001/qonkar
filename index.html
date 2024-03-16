@@ -11,9 +11,6 @@
     <meta property="og:description" content="" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Qonkar Technologies" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="shortcut icon" href="#" />
     <link rel="shortcut icon" href="images/icons/favicon-32x32.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,10 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js" integrity="sha512-ioFpA4cD4gmoOhHglW4f6gep7w+YL7UMKtXx4ebJ5NN4SscmnZYYmSjkA+DaHGvBI4wpYVPx2C7DmmV9TgbIbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/dist/fullpage.min.js"></script> -->
     <script src="javascript/script.js" defer></script>
   </head>
   <body class="homepage">
@@ -37,13 +35,13 @@
       <h1>• ola`</h1>
       <h1>• Ciao</h1>
     </div>
-    <div class="main" id="fullpage">
+    <div class="main">
       <div class="circle__up">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#2ab9c0" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
           <path class="circle" d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
         </svg>
       </div>
-      <section class="vertical-scrolling">
+      <section>
         <header>
           <div class="child1">
             <div class="container header-container">
@@ -52,14 +50,6 @@
               </div>
               <div class="navbar">
                 <ul class="navlinks">
-                  <!-- <label
-                    >Theme:
-                    <select data-theme-picker name="themepicker" id="theme">
-                       <option value="system">system</option> -->
-                  <!-- <option value="light">light</option>
-                      <option value="dark">dark</option>
-                    </select>
-                  </label> -->
                   <a href="#">home</a>
                   <a href="#">portfolio</a>
                   <a href="#">career</a>
@@ -135,20 +125,6 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="btn-conteiner">
-                    <a class="btn-content" href="#">
-                      <span class="btn-title">get started</span>
-                      <span class="icon-arrow">
-                        <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                            <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                            <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                          </g>
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
                 </ul>
               </div>
 
@@ -171,7 +147,7 @@
         <!-- </section>
 
      end header -->
-        <!-- <section class="vertical-scrolling"> -->
+        <!-- <section> -->
         <div class="child2">
           <div class="container hero-section">
             <div class="left-hero-section">
@@ -194,7 +170,7 @@
                   <div class="d-flex">
                     <div class="ms-3">
                       <h6 class="mb-1">24/7 Support</h6>
-                      <p class="mb-0">We're always here to help</p>
+                      <p class="mb-2">We're always here to help</p>
                     </div>
                   </div>
                 </div>
@@ -246,7 +222,7 @@
         </div>
       </section>
       <!-- section end -->
-      <section class="vertical-scrolling">
+      <section>
         <div class="child3">
           <div class="company-heading">
             <h1>companies work</h1>
@@ -269,7 +245,7 @@
         </div>
       </section>
       <!-- 2nd section -->
-      <section class="vertical-scrolling">
+      <section>
         <div class="our-services">
           <h1>services we provide</h1>
         </div>
@@ -367,7 +343,7 @@
 
       <!-- section end -->
       <!-- section end -->
-      <section class="vertical-scrolling">
+      <section>
         <div>
           <div class="child5">
             <div class="portfolio-heading">
@@ -416,7 +392,7 @@
         </div>
       </section>
       <!-- section end -->
-      <!-- <section class="vertical-scrolling">
+      <!-- <section>
         <div class="child6">
           <div class="about-us-heading">
             <h1>about us</h1>
@@ -424,7 +400,7 @@
         </div>
       </section> -->
       <!-- section end -->
-      <!-- <section class="vertical-scrolling">
+      <!-- <section>
         <div class="child7">
           <div class="about-blogs">
             <h1>blogs</h1>
@@ -432,7 +408,7 @@
         </div>
       </section> -->
       <!-- section end -->
-      <section class="vertical-scrolling">
+      <section>
         <div class="child8">
           <div class="faq-heading">
             <h1>faqs</h1>
@@ -440,7 +416,7 @@
           <div class="container accordian-group">
             <div class="accordion">
               <div class="tab">
-                <input type="checkbox" name="accordion-1" id="cb1" checked />
+                <input type="checkbox" name="accordion-1" id="cb1" />
                 <label for="cb1" class="tab__label">frequently asks</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -484,7 +460,7 @@
         </div>
       </section>
       <!-- section end -->
-      <!-- <section class="vertical-scrolling">
+      <!-- <section >
         <div class="child9">
           <div class="industry-heading">
             <h1>industrial expertise</h1>
@@ -492,7 +468,7 @@
         </div>
       </section> -->
       <!-- section end -->
-      <section class="vertical-scrolling">
+      <section>
         <div class="child10">
           <div class="Testimonial-heading">
             <h1>testimonials</h1>
@@ -572,14 +548,14 @@
         </div>
       </section>
       <!-- section end -->
-      <!-- <section class="vertical-scrolling">
+      <!-- <section >
         <div class="child11">
           <div class="contact-us-heading">
             <h1>contact us</h1>
           </div>
         </div>
       </section> -->
-      <footer class="vertical-scrolling">
+      <footer>
         <div class="footer-container-div">
           <div class="footer-wrapper">
             <div class="footer-container">
@@ -598,7 +574,6 @@
               </div>
               <div class="col1-footer-grid">
                 <li><a class="footer-heading" href="">SPECIALIZE</a></li>
-
                 <li><a href="">digital marketing</a></li>
                 <li><a href="">Graphics & Design</a></li>
                 <li><a href="">Data</a></li>
@@ -645,7 +620,7 @@
           <div class="footer-dropdown">
             <div class="accordion-dropdown">
               <div class="dropdown">
-                <input type="checkbox" name="footer-1" id="ft1" checked />
+                <input type="checkbox" name="footer-1" id="ft1" />
                 <label for="ft1" class="foot__label">SERVICES</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -655,7 +630,7 @@
                 </div>
               </div>
               <div class="dropdown">
-                <input type="checkbox" name="footer-2" id="ft2" checked />
+                <input type="checkbox" name="footer-2" id="ft2" />
                 <label for="ft2" class="foot__label">SPECIALIZE</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -665,7 +640,7 @@
                 </div>
               </div>
               <div class="dropdown">
-                <input type="checkbox" name="footer-3" id="ft3" checked />
+                <input type="checkbox" name="footer-3" id="ft3" />
                 <label for="ft3" class="foot__label">CAREERS</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -675,7 +650,7 @@
                 </div>
               </div>
               <div class="dropdown">
-                <input type="checkbox" name="footer-4" id="ft4" checked />
+                <input type="checkbox" name="footer-4" id="ft4" />
                 <label for="ft4" class="foot__label">PRODUCTS</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -685,7 +660,7 @@
                 </div>
               </div>
               <div class="dropdown">
-                <input type="checkbox" name="footer-4" id="ft5" checked />
+                <input type="checkbox" name="footer-4" id="ft5" />
                 <label for="ft5" class="foot__label">ABOUT US</label>
                 <svg class="arrow-icon" width="16" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L5 5L1 9" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
