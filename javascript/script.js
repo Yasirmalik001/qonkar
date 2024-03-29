@@ -3,24 +3,21 @@ setTimeout(function () {
   loader.style.top = "-100%";
 }, 2500);
 
-document.addEventListener("DOMContentLoaded", function () {
-  if (document.body.classList.contains("homepage")) {
-    var btn = document.querySelector(".circle__up");
-    const checkScroll = () => {
-      switch (true) {
-        case window.scrollY < 100:
-          btn.style.display = "none";
-          break;
-        case window.scrollY >= 400:
-          btn.style.display = "block";
-          break;
-      }
-    };
 
-    checkScroll();
-    window.addEventListener("scroll", checkScroll);
+var btn = document.querySelector(".circle__up");
+const checkScroll = () => {
+  switch (true) {
+    case window.scrollY < 100:
+      btn.classList.remove("button-show");
+      break;
+    case window.scrollY >= 200:
+      btn.classList.add("button-show");
+      break;
   }
-});
+};
+
+checkScroll();
+window.addEventListener("scroll", checkScroll);
 
 var btn = document.querySelector(".circle__up");
 btn.addEventListener("click", () => {

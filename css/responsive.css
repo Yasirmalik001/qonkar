@@ -149,3 +149,26 @@
     gap: 10px;
   }
 }
+@media screen and (max-width: 500px) {
+  .industry-heading h1 {
+    font-size: 1.5rem;
+  }
+  .company-heading h1 {
+    font-size: 1.5rem;
+  }
+  .portfolio-heading h1 {
+    font-size: 1.5rem;
+  }
+  .about-us-heading {
+    font-size: 1.5rem;
+  }
+  .faq-heading h1 {
+    font-size: 1.5rem;
+  }
+  .Testimonial-heading h1 {
+    font-size: 1.5rem;
+  }
+  .our-services h1 {
+    font-size: 1.5rem;
+  }
+}
