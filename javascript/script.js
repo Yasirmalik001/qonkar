@@ -27,6 +27,16 @@ btn.addEventListener("click", () => {
   });
 });
 
+const button = document.querySelector(".button");
+const menu = document.querySelector(".menu");
+button.addEventListener("click", () => {
+  button.classList.toggle("-menu-open");
+  menu.classList.toggle("-open");
+});
+
+
+
+
 var typed2 = new Typed(".typed", {
   strings: ["digital IDEAS", "digital SUCCESS", "UI/UX DESIGN"],
   typeSpeed: 50,
