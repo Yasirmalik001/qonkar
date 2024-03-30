@@ -780,7 +780,7 @@ li {
   padding: 20px;
   position: relative;
   border-radius: 10px;
-  min-width: 250px;
+  min-width: 200px;
   max-height: 250px;
   width: 100%;
  
@@ -1247,7 +1247,9 @@ input[type="checkbox"] {
   padding: 40px 20px;
 }
 /*=============== end input field ===============*/
-
+footer{
+  padding: 30px 10px;
+}
 .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
