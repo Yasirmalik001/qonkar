@@ -709,7 +709,7 @@ li {
   animation: scroll 20s linear infinite;
   
 }
-.wrapper:hover {
+.brand-lists:hover .wrapper{
   animation-play-state: paused;
 }
 .wrapper img {
@@ -922,40 +922,36 @@ li {
 }
 /*=============== PORTFOLIO  FIELD ===============*/
 
-.about-blogs h1 {
-  font-weight: 600;
-  font-size: 2.5rem;
-  padding: 40px 20px;
-}
-.about-blogs-container {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 25px;
-  padding: 40px 20px;
-}
-.blogs-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.our_vistors_container{
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 0;
+  
+  
+}
+.visitors{
+  width: 22rem;
+  height: 17rem;
+  background-color: whitesmoke;
+  padding: 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
   flex-direction: column;
-  border: 1px solid #2ab9c037;
-  border-radius: var(--border-radius);
+  
 }
-.blogs-image img {
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: var(--border-radius);
+.visitors h1{
+  font-size: 3rem;
+
 }
-.blogs-text h3 {
-  padding: 10px;
-  font-weight: 500;
+.visitors p{
+  font-size: 1rem;
 }
-/*=============== blog field ===============*/
+
+/*=============== visitors field ===============*/
 
 .faq-heading h1 {
   font-weight: 600;
@@ -963,69 +959,64 @@ li {
   padding: 40px 20px;
   text-transform: uppercase;
 }
-.accordian-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 50px;
-  padding: 30px 20px;
+
+.faq-drawer__content-wrapper {
+  font-size: 1rem;
+  max-height: 0px;
+  overflow: hidden;
+  padding-top: 5px;
+  transition: 0.25s ease-in-out;
 }
 
-.tab__content {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: all ease-in-out 0.5s;
-  -o-transition: all 0.5s;
-  transition: all ease-in-out 0.5s;
-  margin: 20px 0;
-}
-.tab__content p {
-  font-size: 1.2rem;
-}
-.tab__label {
-  font-size: 1.5rem;
-}
-.accordion .tab {
+.faq-drawer__title {
+  border-bottom: #000 1px solid;
+  cursor: pointer;
+  display: block;
+  font-size: 1.25rem;
+  padding: 30px 0 10px 0;
   position: relative;
-  padding-top: 20px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
+  transition: all 0.25s ease-out;
 }
-.tab input:checked ~ .tab__content {
-  max-height: 15rem;
-  transition: all ease cubic-bezier(1, 0, 0, 1);
+
+.faq-drawer__title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  float: right;
+  height: 10px;
+  left: 2px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 10px;
 }
+
+.faq-drawer__trigger:checked
++ .faq-drawer__title
++ .faq-drawer__content-wrapper {
+  max-height: 350px;
+  
+}
+.faq-drawer__trigger:checked + .faq-drawer__title {
+  color: var(--accent);
+}
+
+.faq-drawer__trigger:checked + .faq-drawer__title::after {
+  color: var(--accent);
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
 input[type="checkbox"] {
   display: none;
 }
-.tab input:checked ~ svg {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -webkit-transition: all ease 0.3s;
-  -o-transition: all 0.3s;
-  transition: all ease 0.3s;
-}
-.tab .arrow-icon {
-  position: absolute;
-  right: 20px;
-  top: 30px;
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  -webkit-transition: all ease 0.3s;
-  -o-transition: all 0.3s;
-  transition: all ease 0.3s;
-}
+
+
+
 /*=============== faq  FIELD ===============*/
 
 .industry-heading h1 {
