@@ -269,7 +269,7 @@ li {
   transform-origin: center;
 }
 
-.button.-menu-open svg {
+.button.-menu-open svg { 
   stroke: #000;
   transition: 0.2s;
 }
