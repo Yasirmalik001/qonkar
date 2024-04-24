@@ -5,15 +5,12 @@
   .hamburger {
     display: block;
   }
-  header {
-    padding: 0 20px;
-  }
+
   .hero-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0 10px;
   }
   .left-hero-section {
     width: 100%;
@@ -46,7 +43,7 @@
     font-weight: 900;
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: var(--theme-dark-color);
+    color: var(--primary);
   }
   .company-logo img {
     height: 40px;
@@ -86,21 +83,18 @@
 @media screen and (max-width: 700px) {
   .tab__content p {
     font-size: 0.7rem;
-}
+  }
   .tab__label {
     font-size: 1.2rem;
-}
-.circle__up.button-show {
-right: 40px;
-}
-  header {
-    padding: 0 20px;
+  }
+  .circle__up.button-show {
+    right: 40px;
   }
 
   .foot__label {
     font-size: 1rem;
     letter-spacing: -1px;
-}
+  }
   .section-left h1 {
     font-size: 1.8rem;
     font-weight: 400;
@@ -108,7 +102,6 @@ right: 40px;
   .typed {
     font-size: 1.8rem;
     font-weight: 400;
-
   }
   .wrapper {
     grid-auto-columns: 10rem;
@@ -167,14 +160,13 @@ right: 40px;
   }
 }
 @media screen and (max-width: 500px) {
-
   .menu h3 {
     color: black;
     text-align: right;
     font-size: 3rem;
     margin: 20px 0;
     font-weight: 500;
-}
+  }
   .industry-heading h1 {
     font-size: 1.5rem;
   }
